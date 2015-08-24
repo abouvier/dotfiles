@@ -1,0 +1,13 @@
+[user]
+	name = abouvier
+	email = abouvier@student.42.fr
+[credential]
+	helper = cache --timeout=3600
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore_global
