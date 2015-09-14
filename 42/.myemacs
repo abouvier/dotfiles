@@ -3,6 +3,7 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+(setq-default font-lock-global-modes t)
 (setq column-number-mode t)
 (setq linum-format "%d ")
 (global-linum-mode t)
