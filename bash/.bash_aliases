@@ -5,6 +5,7 @@ alias df='df -h'
 alias e='emacs'
 alias z='zile'
 
+alias purge='sudo apt-get autoremove --purge'
 alias installed_packages='comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n "s/^Package: //p" | sort -u)'
 
 fh() {
