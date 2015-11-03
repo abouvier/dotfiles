@@ -1,0 +1,7 @@
+[user]
+	name = abouvier
+	email = abouvier@student.42.fr
+[push]
+	default = simple
+[color]
+	ui = auto

@@ -1,0 +1,3 @@
+.gcc-flags.json
+.dir-locals.el
+*.h.gch
