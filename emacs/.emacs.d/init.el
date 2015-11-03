@@ -1,4 +1,12 @@
-(add-to-list 'load-path "~/.emacs.d/lisp/")
+:(require 'package) ;; You might already have this line
+(add-to-list 'package-archives
+			 '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize) ;; You might already have this line
+
+(add-to-list 'load-path "~/.emacs.d/elisp/")
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)
@@ -16,3 +24,5 @@
 (add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
 (add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
