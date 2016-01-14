@@ -1,12 +1,14 @@
 alias ls='ls -hF --color=auto'
 alias ll='ls -l'
 alias la='ll -a'
+alias l='ls'
+alias grep='grep --color=auto'
 alias df='df -h'
+alias du='du -h'
 alias e='emacs'
-alias z='zile'
 
-alias purge='sudo apt-get autoremove --purge'
-alias installed_packages='comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n "s/^Package: //p" | sort -u)'
+#alias purge='sudo apt-get autoremove --purge'
+#alias installed_packages='comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n "s/^Package: //p" | sort -u)'
 
 fh() {
 	find -L /usr/include/ -type f -name "*.h" -exec grep --color=auto -Hn "$*" {} +
@@ -27,6 +29,14 @@ mine2() {
 		sudo chown -R $USER:$USER "$path"
 		find "$path" -type d -exec chmod 750 {} +
 		find "$path" -type f -exec chmod 640 {} +
+	done
+}
+
+public() {
+	for path in "$@"
+	do
+		find "$path" -type d -exec chmod a+rx {} +
+		find "$path" -type f -exec chmod a+r  {} +
 	done
 }
 
