@@ -13,16 +13,13 @@
 (global-linum-mode t)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
-(global-set-key (kbd "DEL") 'backward-delete-char)
-(setq-default c-backspace-function 'backward-delete-char)
 (setq-default c-basic-offset 4)
 (setq-default c-default-style "linux")
+(setq vc-follow-symlinks nil)
 
 (autoload 'apache-mode "apache-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.htaccess\\'"   . apache-mode))
 (add-to-list 'auto-mode-alist '("httpd\\.conf\\'"  . apache-mode))
-(add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
-(add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
