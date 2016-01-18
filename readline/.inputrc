@@ -1,0 +1,9 @@
+$include /etc/inputrc
+
+set colored-stats on
+set completion-ignore-case on
+set mark-symlinked-directories on
+set show-all-if-unmodified on
+set visible-stats on
+
+"\eh": "\C-a\eb\ed\C-y\e#man \C-y\C-m\C-p\C-p\C-a\C-d\C-e"
