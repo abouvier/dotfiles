@@ -39,7 +39,14 @@ public() {
 	done
 }
 
-sopcast() {
+backup () {
+	for dir in "$@"
+	do
+		rsync -av --delete --delete-excluded --exclude-from="${dir%/}"/.rsync_exclude "$(realpath "$dir")" /mnt/backup
+	done
+}
+
+sopcast () {
 	sp-sc "$1" 3908 8908
 	#vlc http://localhost:8908/tv.asf
 }
