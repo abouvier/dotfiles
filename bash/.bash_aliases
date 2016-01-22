@@ -1,3 +1,4 @@
+alias sudo='sudo '
 alias ls='ls -hF --color=auto'
 alias ll='ls -l'
 alias la='ll -a'
