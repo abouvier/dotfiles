@@ -7,6 +7,7 @@ alias grep='grep --color=auto'
 alias df='df -h'
 alias du='du -h'
 alias e='emacs'
+alias unbuffer='unbuffer '
 
 #alias purge='sudo apt-get autoremove --purge'
 #alias installed_packages='comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n "s/^Package: //p" | sort -u)'
