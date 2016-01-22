@@ -1,6 +1,6 @@
-IGNORE = 42 zsh
+IGNORE = 42
 
-PKGS := $(filter-out $(IGNORE),$(shell find -maxdepth 1 -type d \! -name '.*' -exec basename '{}' \;))
+PKGS := $(filter-out $(IGNORE),$(shell ls -d */ | cut -d/ -f1))
 
 install:
 	stow -Svt ~ $(PKGS)
