@@ -14,9 +14,7 @@ export VISUAL=/usr/bin/emacs
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig
 export STEAM_FRAME_FORCE_CLOSE=1
 export WINEARCH=win32
-
-[ -x /usr/bin/lesspipe.sh ] && eval `lesspipe.sh` && export LESS=-R
-[ -x /usr/bin/dircolors ] && eval `dircolors -b`
+export WINEDLLOVERRIDES="winemenubuilder.exe=d"
 
 [ -d /usr/lib/ccache/bin ] && PATH="/usr/lib/ccache/bin:$PATH"
 [ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
