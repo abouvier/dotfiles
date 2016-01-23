@@ -1,0 +1,19 @@
+[Desktop Entry]
+DefaultProfile=Bash.profile
+
+[Favorite Profiles]
+Favorites=Bash.profile
+
+[KonsoleWindow]
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+Height 1080=1017
+State=AAAA/wAAAAD9AAAAAAAAA7wAAAPbAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=956
+
+[TabBar]
+NewTabBehavior=PutNewTabAfterCurrentTab
+TabBarPosition=Top
+TabBarVisibility=ShowTabBarWhenNeeded
