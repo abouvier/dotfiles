@@ -12,6 +12,7 @@ Height 1080=1017
 State=AAAA/wAAAAD9AAAAAAAAA7wAAAPbAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=956
+Window-Maximized 1080x1920=false
 
 [TabBar]
 NewTabBehavior=PutNewTabAfterCurrentTab
