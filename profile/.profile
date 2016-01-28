@@ -15,6 +15,11 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig
 export STEAM_FRAME_FORCE_CLOSE=1
 export WINEARCH=win32
 export WINEDLLOVERRIDES="winemenubuilder.exe=d"
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM="auto"
+export GIT_PS1_SHOWCOLORHINTS=1
 
 [ -d /usr/lib/ccache/bin ] && PATH="/usr/lib/ccache/bin:$PATH"
 [ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
