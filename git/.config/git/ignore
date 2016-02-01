@@ -7,3 +7,6 @@
 
 # atom linter-clang
 .clang_complete
+
+# dolphin
+.directory
