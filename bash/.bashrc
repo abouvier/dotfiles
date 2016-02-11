@@ -26,6 +26,6 @@ shopt -s globstar
 [[ -r /usr/share/autojump/autojump.bash ]] \
 	&& . /usr/share/autojump/autojump.bash
 
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} __git_ps1 '\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]' '\[\e[1;30m\]\\\$\[\e[0m\] '"
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND;} __git_ps1 '\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]' '\[\e[1;30m\]\\\$\[\e[0m\] '"
 
 [[ -r ~/.bash_aliases ]] && . ~/.bash_aliases
