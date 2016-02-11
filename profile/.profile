@@ -22,6 +22,7 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=verbose
 export GIT_PS1_SHOWCOLORHINTS=1
+export CCACHE_DIR=/tmp/ccache
 
 [ -d /usr/lib/ccache/bin ] && PATH="/usr/lib/ccache/bin:$PATH"
 [ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
