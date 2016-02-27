@@ -1,0 +1,2 @@
+clonedir="$HOME/.cache/pacaur"
+displaybuildfiles=diff
