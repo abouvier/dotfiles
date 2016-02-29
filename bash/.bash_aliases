@@ -9,8 +9,8 @@ alias du='du -h'
 alias e='emacs'
 alias unbuffer='unbuffer '
 
-fh () {
-	find -L /usr/include/ -type f -name '*.h' -exec grep -Hn --color=auto "$*" {} +
+ft () {
+	find -L "${2:-.}" -type f -exec grep -Hn --color=auto "$1" {} +
 }
 
 alias ldap42='ldapsearch -H ldaps://ldap.42.fr -b dc=42,dc=fr -D uid=abouvier,ou=august,ou=2013,ou=paris,ou=people,dc=42,dc=fr -y ~/.config/ldap/passwd'
