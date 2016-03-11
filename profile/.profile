@@ -10,6 +10,7 @@ export WINEPREFIX="$XDG_DATA_HOME"/wine
 export RLWRAP_HOME="$XDG_DATA_HOME"/rlwrap
 export COMPOSER_HOME="$XDG_CONFIG_HOME"/composer
 export COMPOSER_CACHE_DIR="$XDG_CACHE_HOME"/composer
+export ATOM_HOME="$XDG_DATA_HOME"/atom
 
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/emacs
