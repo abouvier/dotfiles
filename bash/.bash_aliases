@@ -42,6 +42,6 @@ public () {
 backup () {
 	for dir in "$@"
 	do
-		rsync -avX --delete --delete-excluded --exclude-from="${dir%/}"/.rsync_exclude "$(realpath "$dir")" /mnt/backup
+		rsync -vaX --delete --delete-excluded --exclude-from="${dir%/}"/.rsync_exclude "$(realpath "$dir")" /mnt/backup
 	done
 }
