@@ -8,6 +8,7 @@ alias df='df -h'
 alias du='du -h'
 alias e='emacs'
 alias unbuffer='unbuffer '
+alias colors='msgcat --color=test | sed -n "3,10{y/|/\n/;p}" | sed "2~11!d" | paste -sd \\0'
 
 ft () {
 	find -L "${2:-.}" -type f -exec grep -Hn --color=auto "$1" {} +
