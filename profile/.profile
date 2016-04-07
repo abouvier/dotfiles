@@ -14,7 +14,6 @@ export ATOM_HOME="$XDG_DATA_HOME"/atom
 
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/emacs
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig
 export STEAM_FRAME_FORCE_CLOSE=1
 export WINEARCH=win32
 export WINEDLLOVERRIDES="winemenubuilder.exe=d"
