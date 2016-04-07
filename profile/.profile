@@ -16,7 +16,7 @@ export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/emacs
 export STEAM_FRAME_FORCE_CLOSE=1
 export WINEARCH=win32
-export WINEDLLOVERRIDES="winemenubuilder.exe=d"
+export WINEDLLOVERRIDES=winemenubuilder.exe=d
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
