@@ -1,16 +1,12 @@
 umask 027
 
-export XDG_DATA_HOME="$HOME"/.local/share
-export XDG_CONFIG_HOME="$HOME"/.config
-export XDG_CACHE_HOME="$HOME"/.cache
-
-export GIMP2_DIRECTORY="$XDG_CONFIG_HOME"/gimp
-export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
-export WINEPREFIX="$XDG_DATA_HOME"/wine
-export RLWRAP_HOME="$XDG_DATA_HOME"/rlwrap
-export COMPOSER_HOME="$XDG_CONFIG_HOME"/composer
-export COMPOSER_CACHE_DIR="$XDG_CACHE_HOME"/composer
-export ATOM_HOME="$XDG_DATA_HOME"/atom
+export GIMP2_DIRECTORY="${XDG_CONFIG_HOME:-$HOME/.config}"/gimp
+export LESSHISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/less/history
+export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}"/wine
+export RLWRAP_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"/rlwrap
+export COMPOSER_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"/composer
+export COMPOSER_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}"/composer
+export ATOM_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"/atom
 
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/emacs
