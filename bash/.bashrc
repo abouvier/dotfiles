@@ -23,6 +23,6 @@ do
 	[[ -r /usr/share/"$script" ]] && . /usr/share/"$script"
 done
 
-PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND;} __git_ps1 '\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]' '\[\e[1;30m\]\\\$\[\e[0m\] '"
+type -t __git_ps1 > /dev/null && PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} __git_ps1 '\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]' '\[\e[1;30m\]\\\$\[\e[0m\] '"
 
 [[ -r ~/.bash_aliases ]] && . ~/.bash_aliases
