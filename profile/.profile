@@ -7,6 +7,7 @@ export RLWRAP_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"/rlwrap
 export COMPOSER_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"/composer
 export COMPOSER_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}"/composer
 export ATOM_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"/atom
+export GNUPGHOME="${XDG_CONFIG_HOME:-$HOME/.config}"/gnupg
 
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/emacs
