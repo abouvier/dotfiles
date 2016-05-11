@@ -1,0 +1,11 @@
+vbi-text=1
+qt-system-tray=0
+qt-video-autoresize=0
+#audio-filter=normvol
+video-on-top=1
+snapshot-path=/mnt/data/Images/Capture
+deinterlace=-1
+deinterlace-mode=yadif2x
+input-record-path=/mnt/data/Enregistrements
+repeat=1
+one-instance=1
