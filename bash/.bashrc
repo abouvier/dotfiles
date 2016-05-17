@@ -11,7 +11,6 @@ shopt -s histappend
 shopt -s checkwinsize
 shopt -s globstar
 
-[[ -x /usr/bin/lesspipe.sh ]] && eval " $(lesspipe.sh)" && export LESS=-R
 [[ -x /usr/bin/dircolors ]] && eval " $(dircolors -b)"
 
 for script in \
