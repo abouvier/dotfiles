@@ -1,2 +1,1 @@
-clonedir="${XDG_CACHE_HOME:-$HOME/.cache}"/pacaur
 displaybuildfiles=diff
