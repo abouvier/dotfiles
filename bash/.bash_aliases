@@ -10,6 +10,7 @@ alias e='emacs'
 alias unbuffer='unbuffer '
 alias colors='msgcat --color=test | sed -n "3,10{y/|/\n/;p}" | sed "2~11!d" | paste -sd \\0'
 alias installed_packages='comm -23 <(pacman -Qqe | sort) <(pacman -Qqg base base-devel | sort)'
+alias se='sudoedit'
 
 ft () {
 	find -L "${2:-.}" -type f -exec grep -Hn --color=auto "$1" {} +
