@@ -1,6 +1,7 @@
 [user]
 	name = abouvier
 	email = abouvier@student.42.fr
+	signingkey = 4765CA62
 [push]
 	default = simple
 [color]
