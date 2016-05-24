@@ -22,6 +22,7 @@ export GIT_PS1_SHOWUPSTREAM=verbose
 export GIT_PS1_SHOWCOLORHINTS=1
 export CCACHE_DIR=/tmp/ccache
 export LESS=-R
+export LESSCOLORIZER=pygmentize
 
 [ -d /usr/lib/ccache/bin ] && PATH=/usr/lib/ccache/bin:"$PATH"
 [ -d ~/bin ] && PATH=~/bin:"$PATH"
