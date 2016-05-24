@@ -1,5 +1,3 @@
-umask 027
-
 export GIMP2_DIRECTORY="${XDG_CONFIG_HOME:-$HOME/.config}"/gimp
 export LESSHISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}"/less/history
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}"/wine
@@ -26,3 +24,5 @@ export LESSCOLORIZER=pygmentize
 
 [ -d /usr/lib/ccache/bin ] && PATH=/usr/lib/ccache/bin:"$PATH"
 [ -d ~/bin ] && PATH=~/bin:"$PATH"
+
+umask 027
