@@ -16,7 +16,6 @@ shopt -s globstar
 
 for script in \
 	autojump/autojump.bash \
-	bash-completion/bash_completion \
 	doc/pkgfile/command-not-found.bash \
 	git/completion/git-prompt.sh
 do
