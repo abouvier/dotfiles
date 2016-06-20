@@ -21,15 +21,13 @@ ft () {
 alias ldap42='ldapsearch -H ldaps://ldap.42.fr -b dc=42,dc=fr -D uid=abouvier,ou=august,ou=2013,ou=paris,ou=people,dc=42,dc=fr -y ~/.config/ldap/passwd'
 
 mine () {
-	for path in "$@"
-	do
+	for path in "$@" ; do
 		find "$path" -exec chmod g-w,o-rwx {} +
 	done
 }
 
 mine2 () {
-	for path in "$@"
-	do
+	for path in "$@" ; do
 		sudo chown -R "$USER:$USER" "$path"
 		find "$path" -type d -exec chmod 750 {} +
 		find "$path" -type f -exec chmod 640 {} +
@@ -37,16 +35,14 @@ mine2 () {
 }
 
 public () {
-	for path in "$@"
-	do
+	for path in "$@" ; do
 		find "$path" -type d -exec chmod a+rx {} +
 		find "$path" -type f -exec chmod a+r  {} +
 	done
 }
 
 backup () {
-	for dir in "$@"
-	do
+	for dir in "$@" ; do
 		rsync -vaX --delete --delete-excluded --exclude-from="${dir%%+(/)}"/.rsync_exclude "$(realpath "$dir")" /mnt/backup
 	done
 }
