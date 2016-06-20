@@ -2,7 +2,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}"/bash/history
+HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/bash/history
 HISTCONTROL=erasedups
 HISTFILESIZE=2000
 HISTSIZE=1000

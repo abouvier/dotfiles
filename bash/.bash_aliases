@@ -30,7 +30,7 @@ mine () {
 mine2 () {
 	for path in "$@"
 	do
-		sudo chown -R $USER:$USER "$path"
+		sudo chown -R "$USER:$USER" "$path"
 		find "$path" -type d -exec chmod 750 {} +
 		find "$path" -type f -exec chmod 640 {} +
 	done
