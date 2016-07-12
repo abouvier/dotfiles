@@ -1,0 +1,4 @@
+#!/bin/sh
+export DE=kde
+# fix tearing
+export __GL_YIELD=USLEEP
