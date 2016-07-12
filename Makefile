@@ -1,4 +1,4 @@
-IGNORE = 42
+IGNORE = 42 vlc
 
 PKGS := $(filter-out $(IGNORE),$(shell ls -d */ | cut -d/ -f1))
 
