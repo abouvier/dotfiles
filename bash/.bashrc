@@ -22,7 +22,7 @@ done
 
 if [[ -r /usr/share/git/completion/git-prompt.sh ]] ; then
 	. /usr/share/git/completion/git-prompt.sh
-	PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} __git_ps1 '\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]' '\[\e[1;30m\]\\\$\[\e[0m\] '"
+	PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}'__git_ps1 "\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]" "\[\e[1;30m\]\\\$\[\e[0m\] "'
 fi
 
 # shellcheck source=.bash_aliases
