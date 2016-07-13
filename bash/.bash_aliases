@@ -10,19 +10,19 @@ alias df='df -h'
 alias du='du -h'
 alias e='emacs'
 alias unbuffer='unbuffer '
-alias colors='msgcat --color=test \
-	| sed -n "3,10{y/|/\n/;p}" \
-	| sed "2~11!d" \
-	| paste -sd \\0'
-alias installed_packages='comm -23 \
+alias colors="msgcat --color=test \
+	| sed -n '3,10{y/|/\n/;p}' \
+	| sed '2~11!d' \
+	| paste -sd ''"
+alias installed_packages="comm -23 \
 	<(pacman -Qqe | sort) \
-	<(pacman -Qqg base base-devel | sort)'
+	<(pacman -Qqg base base-devel | sort)"
 alias se='sudoedit'
 alias t='todo.sh'
-alias ldap42='ldapsearch -H ldaps://ldap.42.fr \
+alias ldap42="ldapsearch -H ldaps://ldap.42.fr \
 	-D uid=abouvier,ou=august,ou=2013,ou=paris,ou=people,dc=42,dc=fr \
 	-y ~/.config/ldap/passwd \
-	-b dc=42,dc=fr'
+	-b dc=42,dc=fr"
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'grep' -IHn --color=auto "$1" {} +
