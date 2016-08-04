@@ -26,7 +26,7 @@ alias ldap42="ldapsearch -H ldaps://ldap.42.fr \
 alias hd='hexdump'
 
 ft () {
-	find -L "${2:-.}" -type f -exec 'grep' -IHn --color=auto "$1" {} +
+	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
 }
 
 mine () {
