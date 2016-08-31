@@ -19,10 +19,6 @@ alias installed_packages="comm -23 \
 	<(pacman -Qqg base base-devel | sort)"
 alias se='sudoedit'
 alias t='todo.sh'
-alias ldap42="ldapsearch -H ldaps://ldap.42.fr \
-	-D uid=abouvier,ou=august,ou=2013,ou=paris,ou=people,dc=42,dc=fr \
-	-y ~/.config/ldap/passwd \
-	-b dc=42,dc=fr"
 alias hd='hexdump'
 
 ft () {
