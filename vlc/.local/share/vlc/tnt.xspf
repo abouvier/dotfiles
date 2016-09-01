@@ -392,8 +392,6 @@
 		<vlc:item tid="25"/>
 		<vlc:item tid="26"/>
 		<vlc:item tid="27"/>
-		<vlc:item tid="41"/>
-		<vlc:item tid="42"/>
 		<vlc:node title="Chaînes locales">
 			<vlc:item tid="30"/>
 			<vlc:item tid="31"/>
@@ -402,6 +400,8 @@
 			<vlc:item tid="34"/>
 		</vlc:node>
 		<vlc:node title="Chaînes payantes">
+			<vlc:item tid="41"/>
+			<vlc:item tid="42"/>
 			<vlc:item tid="43"/>
 			<vlc:item tid="45"/>
 		</vlc:node>
