@@ -264,6 +264,16 @@
 			</extension>
 		</track>
 		<track>
+			<title>France Info</title>
+			<location>dvb-t://</location>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>27</vlc:id>
+				<vlc:option>dvb-frequency=586167000</vlc:option>
+				<vlc:option>dvb-bandwidth=8</vlc:option>
+				<vlc:option>program=262</vlc:option>
+			</extension>
+		</track>
+		<track>
 			<title>BFM Business Paris</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
@@ -381,6 +391,7 @@
 		<vlc:item tid="24"/>
 		<vlc:item tid="25"/>
 		<vlc:item tid="26"/>
+		<vlc:item tid="27"/>
 		<vlc:item tid="41"/>
 		<vlc:item tid="42"/>
 		<vlc:node title="Chaînes locales">
