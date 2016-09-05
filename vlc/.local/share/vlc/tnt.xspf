@@ -74,7 +74,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>D8</title>
+			<title>C8</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>8</vlc:id>
@@ -164,7 +164,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>D17</title>
+			<title>CStar</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>17</vlc:id>
@@ -204,7 +204,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>L'Équipe 21</title>
+			<title>L'Équipe</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>21</vlc:id>
