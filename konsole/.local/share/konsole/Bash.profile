@@ -5,6 +5,7 @@ ColorScheme=invisibone
 Font=DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0
 
 [General]
+Directory=/mnt/data
 Environment=TERM=xterm
 Name=Bash
 Parent=FALLBACK/
