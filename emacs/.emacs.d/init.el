@@ -2,7 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-(load "~/.emacs.d/melpa")
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)
