@@ -3,5 +3,5 @@ export DE=kde
 export STEAM_FRAME_FORCE_CLOSE=1
 export KWIN_TRIPLE_BUFFER=1
 
-nvidia-settings --load-config-only &
-unclutter &
+nvidia-settings --load-config-only
+unclutter --fork
