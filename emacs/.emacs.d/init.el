@@ -1,7 +1,3 @@
-;;; init.el --- Init File
-;;; Commentary:
-;;; Code:
-
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
@@ -16,6 +12,7 @@
 (setq column-number-mode t)
 (global-linum-mode t)
 
+(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 (autoload 'apache-mode "apache-mode" nil t)
@@ -24,5 +21,3 @@
 (add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
 (add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
-
-;;; init.el ends here
