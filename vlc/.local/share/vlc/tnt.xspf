@@ -154,7 +154,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>i&gt;Télé</title>
+			<title>CNews</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>16</vlc:id>
