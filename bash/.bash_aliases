@@ -48,8 +48,8 @@ public () {
 
 backup () {
 	for dir in "$@" ; do
-		rsync -vaX --delete --delete-excluded \
-			--exclude-from="${dir%%+(/)}"/.rsync_exclude \
+		rsync --verbose --archive --acls --xattrs --delete --delete-excluded \
+			--ignore-errors --exclude-from="${dir%%+(/)}"/.rsync_exclude \
 			"$(realpath "$dir")" /mnt/backup
 	done
 }
