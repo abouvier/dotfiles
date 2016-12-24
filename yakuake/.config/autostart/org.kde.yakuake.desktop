@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=yakuake
+Icon=yakuake
+Name=Yakuake
+OnlyShowIn=KDE;
+Path=/mnt/data
+StartupNotify=false
+Terminal=false
+Type=Application
+X-DBUS-ServiceName=org.kde.yakuake
+X-DBUS-StartupType=unique
+X-KDE-StartupNotify=false
