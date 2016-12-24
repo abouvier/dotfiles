@@ -8,10 +8,10 @@ Favorites=Bash.profile
 ShowWindowTitleOnTitleBar=true
 
 [MainWindow]
-Height 1080=1015
-State=AAAA/wAAAAD9AAAAAAAAA7YAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
+Height 1080=1024
+State=AAAA/wAAAAD9AAAAAAAAA74AAAJ4AAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=950
+Width 1920=958
 Window-Maximized 1080x1920=false
 
 [TabBar]
