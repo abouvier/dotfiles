@@ -20,6 +20,7 @@ alias installed_packages="comm -23 \
 alias se='sudoedit'
 alias t='todo.sh'
 alias hd='hexdump'
+alias free='free -h'
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
