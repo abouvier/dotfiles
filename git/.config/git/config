@@ -1,7 +1,7 @@
 [user]
-	name = abouvier
-	email = abouvier@student.42.fr
-	signingkey = 4765CA62
+	name = Alexandre Bouvier
+	email = contact@amb.tf
+	signingkey = 0xEB1E67CE4765CA62
 [push]
 	default = simple
 [color]
