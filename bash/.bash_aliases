@@ -22,6 +22,7 @@ alias t='todo.sh'
 alias hd='hexdump'
 alias free='free -h'
 alias ta='tree -a'
+alias u='pacaur -Syu'
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
