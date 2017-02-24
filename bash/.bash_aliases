@@ -16,7 +16,7 @@ alias colors="msgcat --color=test \
 	| paste -sd ''"
 alias installed_packages="comm -23 \
 	<(pacman -Qqe | sort) \
-	<(pacman -Qqg base base-devel | sort)"
+	<(cat <(pacman -Qqg base base-devel) <(pacman -Qqm) | sort)"
 alias se='sudoedit'
 alias t='todo.sh'
 alias hd='hexdump'
