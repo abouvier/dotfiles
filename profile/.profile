@@ -23,6 +23,7 @@ export CCACHE_DIR=/tmp/ccache
 export LESS=-R
 export LESSCOLORIZER=pygmentize
 export TODOTXT_DEFAULT_ACTION=ls
+export DIFFPROG=icdiff
 
 [ -d /usr/lib/ccache/bin ] && PATH=/usr/lib/ccache/bin:$PATH
 [ -d ~/bin ] && PATH=~/bin:$PATH
