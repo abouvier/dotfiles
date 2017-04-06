@@ -23,6 +23,9 @@ alias hd='hexdump'
 alias free='free -h'
 alias ta='tree -a'
 alias u='pacaur -Syu'
+alias backup="rdiff-backup --exclude-if-present=.nobackup \
+	--exclude=**/lost+found \
+	--exclude=**/.Trash*"
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
@@ -46,13 +49,5 @@ public () {
 	for path in "$@" ; do
 		find "$path" -type d -exec chmod a+rx {} +
 		find "$path" -type f -exec chmod a+r  {} +
-	done
-}
-
-backup () {
-	for dir in "$@" ; do
-		rsync --verbose --archive --acls --xattrs --delete --delete-excluded \
-			--ignore-errors --exclude-from="${dir%%+(/)}"/.rsync_exclude \
-			"$(realpath "$dir")" /mnt/backup
 	done
 }
