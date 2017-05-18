@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=invisibone
-Font=Hack,10,-1,5,50,0,0,0,0,0
+Font=Hack,10,-1,5,50,0,0,0,0,0,Regular
 
 [General]
 Directory=/mnt/data
