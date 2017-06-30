@@ -20,7 +20,7 @@ alias installed_packages="comm -23 \
 alias se='sudoedit'
 alias t='todo.sh'
 alias hd='hexdump'
-alias free='free -h'
+alias free='LANG=C free -h'
 alias ta='tree -a'
 alias u='pacaur -Syu'
 alias backup="rdiff-backup --exclude-if-present=.nobackup \
