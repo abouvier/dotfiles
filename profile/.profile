@@ -9,6 +9,7 @@ export ATOM_HOME=${XDG_DATA_HOME:-$HOME/.local/share}/atom
 export GNUPGHOME=${XDG_CONFIG_HOME:-$HOME/.config}/gnupg
 export TODOTXT_CFG_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/todo/config
 export AURDEST=${XDG_CACHE_HOME:-$HOME/.cache}/pacaur
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh
 
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/emacs
