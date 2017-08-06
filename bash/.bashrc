@@ -6,7 +6,7 @@ HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/bash/history
 PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}'history -a'
 HISTCONTROL=erasedups
 HISTFILESIZE=5000
-HISTSIZE=1000
+HISTSIZE=2000
 
 shopt -s autocd
 shopt -s histappend
