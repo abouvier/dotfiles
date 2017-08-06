@@ -1,0 +1,48 @@
+"*":
+  "atom-beautify":
+    general:
+      analytics: false
+    php:
+      rules: "@Symfony,-no_empty_comment"
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "metrics"
+      "exception-reporting"
+    ]
+    projectHome: "/mnt/data/Git"
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Hack"
+    invisibles: {}
+    showIndentGuide: true
+    softTabs: false
+    softWrap: true
+    tabLength: 4
+    tabType: "hard"
+    zoomFontWhenCtrlScrolling: false
+  "file-icons":
+    coloured: false
+  "linter-clang":
+    clangDefaultCFlags: "-Wall -Wextra -ansi -pedantic"
+    clangDefaultCppFlags: "-Wall -Wextra -std=c++11 -pedantic"
+  "linter-shellcheck":
+    enableNotice: true
+    userParameters: "-x"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "one-dark-ui":
+    fontSize: 13
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
