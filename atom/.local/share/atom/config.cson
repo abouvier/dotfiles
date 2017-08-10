@@ -26,11 +26,12 @@
   "file-icons":
     coloured: false
   "linter-clang":
-    clangDefaultCFlags: "-Wall -Wextra -ansi -pedantic"
-    clangDefaultCppFlags: "-Wall -Wextra -std=c++11 -pedantic"
+    clangDefaultCFlags: "-Wall -Wextra -pedantic -ansi"
+    clangDefaultCppFlags: "-Wall -Wextra -pedantic -std=c++11"
   "linter-shellcheck":
     enableNotice: true
     userParameters: "-x"
+  "linter-ui-default": {}
   minimap:
     plugins:
       "git-diff": true
