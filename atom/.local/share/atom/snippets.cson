@@ -1,0 +1,4 @@
+'.source.c, .source.cpp':
+	'void':
+		'prefix': 'void'
+		disabled: true
