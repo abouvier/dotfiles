@@ -27,6 +27,7 @@ alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/lost+found \
 	--exclude=**/.Trash*"
 alias s='pacaur -Ss'
+alias q='pacaur -Qi'
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
