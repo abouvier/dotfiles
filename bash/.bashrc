@@ -21,8 +21,13 @@ for script in doc/pkgfile/command-not-found.bash autojump/autojump.bash ; do
 done
 
 if [[ -r /usr/share/git/completion/git-prompt.sh ]] ; then
+	color () {
+		local IFS=\;
+		echo "\[\e[${*:2}m\]$1\[\e[0m\]"
+	}
 	. /usr/share/git/completion/git-prompt.sh
-	PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}'__git_ps1 "\[\e[1;32m\]\u\[\e[0m\]\[\e[1;30m\]@\[\e[0m\]\[\e[1;33m\]\h\[\e[0m\]\[\e[1;30m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]" "\[\e[1;30m\]\\\$\[\e[0m\] "'
+	PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}"__git_ps1 '$(color \\u 92)@$(color \\h 93):$(color \\w 94)' ' $(color λ 94) '"
+	unset -f color
 fi
 
 # shellcheck source=.bash_aliases
