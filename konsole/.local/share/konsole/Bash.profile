@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=invisibone
+ColorScheme=base16-monokai
 Font=Hack,10,-1,5,50,0,0,0,0,0,Regular
 
 [General]
