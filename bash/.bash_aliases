@@ -30,6 +30,7 @@ alias s='pacaur -Ss'
 alias q='pacaur -Qi'
 alias r='pacaur -Rcss'
 alias last_installed='expac -t %s %l\\t%n $(installed_packages) | sort | cut -f2'
+alias y='youtube-dl'
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
