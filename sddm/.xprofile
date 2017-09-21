@@ -2,6 +2,9 @@
 export DE=kde
 export STEAM_FRAME_FORCE_CLOSE=1
 export KWIN_TRIPLE_BUFFER=1
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
 
 nvidia-settings --load-config-only
 unclutter --fork
