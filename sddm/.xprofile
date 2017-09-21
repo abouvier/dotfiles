@@ -1,10 +1,8 @@
 #!/bin/sh
-export DE=kde
-export STEAM_FRAME_FORCE_CLOSE=1
-export KWIN_TRIPLE_BUFFER=1
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
-nvidia-settings --load-config-only
-unclutter --fork
+if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d ] ; then
+	for script in "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d/*.sh ; do
+		# shellcheck source=/dev/null
+		[ -x "$script" ] && . "$script"
+	done
+	unset script
+fi
