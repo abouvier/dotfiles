@@ -19,6 +19,7 @@ for script in doc/pkgfile/command-not-found.bash autojump/autojump.bash ; do
 	# shellcheck source=/dev/null
 	[[ -r /usr/share/"$script" ]] && . /usr/share/"$script"
 done
+unset script
 
 if [[ -r /usr/share/git/completion/git-prompt.sh ]] ; then
 	color () {
