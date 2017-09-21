@@ -26,7 +26,7 @@ if [[ -r /usr/share/git/completion/git-prompt.sh ]] ; then
 		echo "\[\e[${*:2}m\]$1\[\e[0m\]"
 	}
 	. /usr/share/git/completion/git-prompt.sh
-	PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}"__git_ps1 '$(color \\u 92)@$(color \\h 93):$(color \\w 94)' ' $(color λ 94) '"
+	PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}"__git_ps1 '$(color \\u 32)@$(color \\h 33):$(color \\w 34)' ' $(color λ 34) '"
 	unset -f color
 fi
 
