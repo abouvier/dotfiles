@@ -3,6 +3,6 @@
 		"theme": "Papirus",
 		"size": 22
 	},
-	"conversion-tool": "Inkscape",
-	"backup-ignore": true
+	"conversion_tool": "RSVGConvert",
+	"backup_ignore": true
 }
