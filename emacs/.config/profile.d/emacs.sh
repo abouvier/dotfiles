@@ -1,2 +1,2 @@
 #!/bin/sh
-export VISUAL=/usr/bin/emacs
+export VISUAL=emacs
