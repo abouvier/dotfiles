@@ -18,5 +18,5 @@
 	"setting.defaultres"		"1920"
 	"setting.defaultresheight"		"1080"
 	"setting.aspectratiomode"		"1"
-	"setting.nowindowborder"		"1"
+	"setting.nowindowborder"		"0"
 }
