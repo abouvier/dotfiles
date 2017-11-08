@@ -27,7 +27,10 @@ alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/lost+found \
 	--exclude=**/.Trash*"
 alias s='pacaur -Ss'
+alias si='pacaur -Si'
 alias q='pacaur -Qi'
+alias ql='pacaur -Ql'
+alias qo='pacaur -Qo'
 alias r='pacaur -Rcss'
 alias last_installed='expac -t %s %l\\t%n $(installed_packages) | sort | cut -f2'
 alias y='youtube-dl'
