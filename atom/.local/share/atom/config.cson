@@ -33,7 +33,8 @@
   "linter-shellcheck":
     enableNotice: true
     userParameters: "-x"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 64
   minimap:
     plugins:
       "git-diff": true
