@@ -36,7 +36,7 @@ alias last_installed='expac -t %s %l\\t%n $(installed_packages) | sort | cut -f2
 alias y='youtube-dl'
 
 ft () {
-	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} +
+	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} + 2>/dev/null
 }
 
 mine () {
