@@ -2,6 +2,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+(require 'generic-x)
+
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 (setq-default tab-width 4)
