@@ -21,6 +21,7 @@ video/x-msvideo=mpv.desktop;
 application/x-bittorrent=qBittorrent.desktop;
 application/x-cue=foobar2000.desktop;
 application/x-subrip=subtitlecomposer.desktop;
+application/x-xpinstall=org.kde.ark.desktop;
 application/xml=org.kde.kate.desktop;
 audio/basic=foobar2000.desktop;
 audio/flac=foobar2000.desktop;
