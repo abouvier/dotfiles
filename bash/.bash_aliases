@@ -24,6 +24,7 @@ alias free='LANG=C free -h'
 alias ta='tree -a'
 alias u='pacaur -Syu'
 alias backup="rdiff-backup --exclude-if-present=.nobackup \
+	--exclude=**/rdiff-backup-data \
 	--exclude=**/lost+found \
 	--exclude=**/.Trash*"
 alias s='pacaur -Ss'
