@@ -12,7 +12,7 @@
       "metrics"
       "exception-reporting"
     ]
-    projectHome: "/mnt/data/Git"
+    projectHome: "/data/Git"
     telemetryConsent: "no"
   editor:
     fontFamily: "Hack"

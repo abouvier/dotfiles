@@ -5,7 +5,7 @@ ColorScheme=base16-monokai
 Font=Hack,10,-1,5,50,0,0,0,0,0,Regular
 
 [General]
-Directory=/mnt/data
+Directory=/data
 Environment=TERM=xterm
 Name=Bash
 Parent=FALLBACK/
