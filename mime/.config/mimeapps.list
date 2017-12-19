@@ -1,6 +1,7 @@
 [Added Associations]
 application/x-cd-image=vlc.desktop;
 application/xml=org.kde.kate.desktop;
+audio/midi=foobar2000.desktop;
 image/svg+xml-compressed=xnviewmp.desktop;
 image/webp=xnviewmp.desktop;
 image/x-dds=xnviewmp.desktop;
