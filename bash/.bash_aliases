@@ -22,20 +22,24 @@ alias t='todo.sh'
 alias hd='hexdump'
 alias free='LANG=C free -h'
 alias ta='tree -a'
-alias u='pacaur -Syu'
+alias u='sudo pacman -Syu ; aursync -u'
 alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/rdiff-backup-data \
 	--exclude=**/lost+found \
 	--exclude=**/.Trash*"
-alias s='pacaur -Ss'
-alias si='pacaur -Si'
-alias q='pacaur -Qi'
-alias ql='pacaur -Ql'
-alias qo='pacaur -Qo'
-alias r='pacaur -Rcss'
+alias si='pacman -Si'
+alias q='pacman -Qi'
+alias ql='pacman -Ql'
+alias qo='pacman -Qo'
+alias r='sudo pacman -Rcss'
 alias last_installed='expac -t %s %l\\t%n $(installed_packages) | sort | cut -f2'
 alias y='youtube-dl'
-alias useless_packages='pacaur -Qdtt'
+alias useless_packages='pacman -Qdtt'
+
+s () {
+	pacman -Ss "$@"
+	printf '(?=.*%s)' "$@" | xargs aurgrep | xargs -r aursearch -i
+}
 
 ft () {
 	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} + 2>/dev/null
