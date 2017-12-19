@@ -24,7 +24,7 @@ unset script
 if [[ -r /usr/share/git/completion/git-prompt.sh ]] ; then
 	color () {
 		local IFS=\;
-		echo "\[\e[${*:2}m\]$1\[\e[0m\]"
+		echo "\\[\\e[${*:2}m\\]$1\\[\\e[0m\\]"
 	}
 	. /usr/share/git/completion/git-prompt.sh
 	PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}"__git_ps1 '$(color \\u 32)@$(color \\h 33):$(color \\w 34)' ' $(color λ 34) '"
