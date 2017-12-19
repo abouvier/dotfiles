@@ -7,6 +7,6 @@ if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/profile.d ] ; then
 	unset script
 fi
 
-[ -d ~/bin ] && PATH=~/bin:$PATH
+[ -d ~/.local/bin ] && PATH=~/.local/bin:$PATH
 
 umask 027
