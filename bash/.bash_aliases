@@ -38,7 +38,7 @@ alias useless_packages='pacman -Qdtt'
 
 s () {
 	pacman -Ss "$@"
-	printf '(?=.*%s)' "$@" | xargs aurgrep | xargs -r aursearch -i
+	printf '(?=.*%s)' "${@,,}" | xargs aurgrep | xargs -r aursearch -i
 }
 
 ft () {
