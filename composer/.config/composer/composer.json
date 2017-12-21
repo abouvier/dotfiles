@@ -1,0 +1,9 @@
+{
+	"require": {
+		"asm89/twig-lint": "@dev"
+	},
+	"config": {
+		"bin-dir": "~/.local/bin",
+		"vendor-dir": "~/.local/lib/composer"
+	}
+}
