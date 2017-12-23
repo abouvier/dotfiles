@@ -42,7 +42,7 @@ s () {
 }
 
 ft () {
-	find -L "${2:-.}" -type f -exec 'egrep' -IHn --color=auto "$1" {} + 2>/dev/null
+	find -L "${2:-.}" -type d -name .git -prune -o -type f -exec 'egrep' -IHn --color=auto "$1" {} + 2>/dev/null
 }
 
 mine () {
