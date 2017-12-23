@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/nvidia-settings --config="${XDG_CONFIG_HOME:-$HOME/.config}"/nvidia/settings "$@"
