@@ -1,6 +1,7 @@
 {
 	"require": {
-		"asm89/twig-lint": "@dev"
+		"asm89/twig-lint": "@dev",
+		"doctormckay/steam-totp": "^1.0"
 	},
 	"config": {
 		"bin-dir": "~/.local/bin",
