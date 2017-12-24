@@ -1,0 +1,4 @@
+#!/bin/sh
+# https://github.com/ValveSoftware/steam-for-linux/issues/4933
+killall -STOP csgo_linux64
+killall -CONT csgo_linux64
