@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/pidgin --config="${XDG_DATA_HOME:-$HOME/.local/share}"/purple "$@"
