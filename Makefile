@@ -1,4 +1,4 @@
-IGNORE = 42 vlc
+IGNORE = 42 vlc gtk yakuake aarchup
 
 PKGS := $(filter-out $(IGNORE),$(shell ls -d */ | cut -d/ -f1))
 
