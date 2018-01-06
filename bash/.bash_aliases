@@ -37,6 +37,8 @@ alias r='sudo pacman -Rcss'
 alias last_installed='expac -t %s %l\\t%n $(installed_packages) | sort | cut -f2'
 alias y='youtube-dl'
 alias useless_packages='pacman -Qdtt'
+alias colordiff='\diff --color=auto'
+alias diff='colordiff'
 
 s () {
 	pacman -Ss "$@"
