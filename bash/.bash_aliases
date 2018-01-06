@@ -24,6 +24,7 @@ alias hd='hexdump'
 alias free='LANG=C free -h'
 alias ta='tree -a'
 alias u='sudo pacman -Syu ; aursync -u'
+alias ud='aursync -u --no-ver --no-view -- $(pacman -Slq aur | grep -- -git\$)'
 alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/rdiff-backup-data \
 	--exclude=**/lost+found \
