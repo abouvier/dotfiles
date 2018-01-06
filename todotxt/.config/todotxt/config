@@ -1,5 +1,5 @@
 #!/bin/bash
-export TODO_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/todo
+export TODO_DIR=/data/Documents/Tâches
 
 export TODO_FILE=$TODO_DIR/todo.txt
 export DONE_FILE=$TODO_DIR/done.txt
