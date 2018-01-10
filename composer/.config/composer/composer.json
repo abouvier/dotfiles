@@ -4,7 +4,7 @@
 		"doctormckay/steam-totp": "^1.0"
 	},
 	"config": {
-		"bin-dir": "~/.local/bin",
-		"vendor-dir": "~/.local/lib/composer"
+		"vendor-dir": "~/.local/lib/composer",
+		"bin-dir": "~/.local/bin"
 	}
 }
