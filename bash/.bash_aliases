@@ -23,7 +23,6 @@ alias t='todo.sh'
 alias hd='hexdump'
 alias free='LANG=C free -h'
 alias ta='tree -a'
-alias u='sudo pacman -Syu ; aursync -u'
 alias ud='aursync -u --no-ver --no-view -- $(pacman -Slq aur | grep -- -git\$)'
 alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/rdiff-backup-data \
@@ -40,6 +39,12 @@ alias useless_packages='pacman -Qdtt'
 alias colordiff='\diff --color=auto'
 alias diff='colordiff'
 alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
+
+u () {
+	sudo pacman -Syu "$@"
+	(($? == 130)) && return 130
+	aursync -u --ignore="$(pacconf --config="${XDG_CONFIG_HOME:-$HOME/.config}"/aursync/ignore IgnorePkg | paste -sd,)" "$@"
+}
 
 s () {
 	pacwoman -Ss -- "$@"
