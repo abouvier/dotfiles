@@ -39,10 +39,11 @@ alias y='youtube-dl'
 alias useless_packages='pacman -Qdtt'
 alias colordiff='\diff --color=auto'
 alias diff='colordiff'
+alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
 
 s () {
-	pacman -Ss "$@"
-	printf '(?=.*%s)' "${@,,}" | xargs aurgrep | xargs -r aursearch -i
+	pacwoman -Ss -- "$@"
+	printf '(?=.*%s)' "${@,,}" | xargs aurgrep -- | xargs -r aursearch -i
 }
 
 ft () {
