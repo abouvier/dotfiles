@@ -1,6 +1,6 @@
 # Fichiers point
 
-Fichiers de configuration à l'attention principale d'Arch Linux. Utilise [GNU Stow](https://www.gnu.org/software/stow/) pour créer des liens symboliques dans le répertoire `$HOME`.
+Fichiers de configuration pour Arch Linux. Utilise [GNU Stow](https://www.gnu.org/software/stow/) pour créer des liens symboliques dans le répertoire `$HOME`.
 
 ## Installation
 
