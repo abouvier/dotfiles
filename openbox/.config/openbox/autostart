@@ -1,0 +1,3 @@
+/usr/lib/notify-osd/notify-osd &
+tint2 &
+yakuake &
