@@ -43,7 +43,7 @@ alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
 u () {
 	sudo pacman -Syu "$@"
 	(($? == 130)) && return 130
-	aursync -u --ignore="$(pacconf --config="${XDG_CONFIG_HOME:-$HOME/.config}"/aursync/ignore IgnorePkg | paste -sd,)" "$@"
+	aursync --update --ignore="$(paste -sd, "${XDG_CONFIG_HOME:-$HOME/.config}"/aursync/ignore)" --rmdeps "$@"
 }
 
 s () {
