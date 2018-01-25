@@ -104,7 +104,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>NT1</title>
+			<title>TFX</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>11</vlc:id>
@@ -194,7 +194,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>HD1</title>
+			<title>TF1 Séries Films</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>20</vlc:id>
@@ -274,7 +274,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>BFM Business Paris</title>
+			<title>BFM Paris</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>30</vlc:id>
@@ -314,7 +314,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>Canal 34</title>
+			<title>viàGrandParis</title>
 			<location>dvb-t://</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>34</vlc:id>
