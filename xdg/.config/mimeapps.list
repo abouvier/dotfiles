@@ -65,3 +65,6 @@ video/x-ms-wmv=mpv.desktop;
 video/x-msvideo=mpv.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/irc=hexchat.desktop;
+x-scheme-handler/magnet=qbittorrent.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
