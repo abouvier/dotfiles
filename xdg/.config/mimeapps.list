@@ -19,7 +19,10 @@ video/x-ms-wmv=mpv.desktop;
 video/x-msvideo=mpv.desktop;
 
 [Default Applications]
+application/vnd.comicbook+zip=mcomix.desktop;
 application/x-bittorrent=qBittorrent.desktop;
+application/x-cbr=mcomix.desktop;
+application/x-cbz=mcomix.desktop;
 application/x-cue=foobar2000.desktop;
 application/x-subrip=subtitlecomposer.desktop;
 application/x-xpinstall=org.kde.ark.desktop;
