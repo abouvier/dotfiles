@@ -1,0 +1,10 @@
+#!/bin/sh
+# shellcheck disable=SC2034
+XDG_DESKTOP_DIR="/data/Bureau"
+XDG_DOCUMENTS_DIR="/data/Documents"
+XDG_DOWNLOAD_DIR="/data/Téléchargements"
+XDG_MUSIC_DIR="/data/Audio/Musique"
+XDG_PICTURES_DIR="/data/Images"
+XDG_PUBLICSHARE_DIR="/data/Public"
+XDG_TEMPLATES_DIR="$HOME/.local/share/templates/.source"
+XDG_VIDEOS_DIR="/data/Vidéos"
