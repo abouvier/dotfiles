@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/i3lock --no-unlock-indicator --image=<(import -silent -window root png:- | convert png:- -scale 10% -scale 1000% png:- | convert png:- "${XDG_DATA_HOME:-$HOME/.local/share}/i3lock/qY1nKlP.png" -gravity center -composite -matte png:-) "$@"
+/usr/bin/i3lock --no-unlock-indicator --image=<(import -silent -window root png:- | mogrify -scale 10% -scale 1000% png:- | composite -gravity center -matte "${XDG_DATA_HOME:-$HOME/.local/share}/i3lock/qY1nKlP.png" png:- png:-) "$@"
