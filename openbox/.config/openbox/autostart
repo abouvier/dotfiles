@@ -1,3 +1,4 @@
-compton &
+feh --no-fehbg --bg-fill ~/.local/share/wallpapers/WeekiWacheeSprings/contents/images/3027x3027.jpg
+compton --daemon
 tint2 &
 yakuake &
