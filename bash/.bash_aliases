@@ -40,6 +40,7 @@ alias colordiff='\diff --color=auto'
 alias diff='colordiff'
 alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
 alias aur-remove='repo-remove "$(pacconf --repo=aur Server | cut -d/ -f3-)"/aur.db.tar'
+alias cmatrix='cmatrix -b'
 
 u () {
 	sudo pacman -Syu "$@"
