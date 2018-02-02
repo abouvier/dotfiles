@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d ] ; then
 	for script in "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d/*.sh ; do
 		# shellcheck source=/dev/null
@@ -8,8 +8,5 @@ if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d ] ; then
 fi
 
 if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d ] ; then
-	for resource in "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d/*.Xresources ; do
-		[ -r "$resource" ] && xrdb -merge "$resource"
-	done
-	unset resource
+	cpp -P -Dbackground_opacity=95 <(cat "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d/*.Xresources) > ~/.Xresources
 fi
