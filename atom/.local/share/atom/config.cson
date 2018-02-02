@@ -14,6 +14,10 @@
     ]
     projectHome: "/data/Git"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dracula-syntax"
+    ]
   editor:
     fontFamily: "Hack"
     invisibles: {}
