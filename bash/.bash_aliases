@@ -23,7 +23,7 @@ alias t='todo.sh'
 alias hd='hexdump'
 alias free='LANG=C free -h'
 alias ta='tree -a'
-alias ud='aursync -u --no-ver --no-view -- $(pacman -Slq aur | grep -- -git\$)'
+alias ud='aursync -u --no-ver --no-view --rmdeps -- $(pacman -Slq aur | egrep -- "-(bzr|git|hg|svn)$")'
 alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/rdiff-backup-data \
 	--exclude=**/lost+found \
@@ -45,12 +45,12 @@ alias cmatrix='cmatrix -b'
 u () {
 	sudo pacman -Syu "$@"
 	(($? == 130)) && return 130
-	aursync --update --ignore="$(paste -sd, "${XDG_CONFIG_HOME:-$HOME/.config}"/aursync/ignore)" --rmdeps "$@"
+	aursync --upgrades --ignore="$(paste -sd, "${XDG_CONFIG_HOME:-$HOME/.config}"/aursync/ignore)" --rmdeps "$@"
 }
 
 s () {
 	pacwoman -Ss -- "$@"
-	printf '(?=.*%s)' "${@,,}" | xargs aurgrep -- | xargs -r aursearch -i
+	printf '(?=.*%s)' "${@,,}" | xargs aurcat -P | xargs -r aursearch -i -k Popularity
 }
 
 ft () {
