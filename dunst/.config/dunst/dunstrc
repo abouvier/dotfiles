@@ -1,17 +1,15 @@
 [global]
 	monitor = 0
 	follow = mouse
-	geometry = "300x5-30-40"
+	geometry = "400x5-30-40"
 	indicate_hidden = yes
 	shrink = no
 	transparency = 5
 	notification_height = 0
-	separator_height = 2
+	separator_height = 0
 	padding = 8
 	horizontal_padding = 8
-	frame_width = 3
-	frame_color = "#aaaaaa"
-	separator_color = frame
+	frame_width = 0
 	sort = yes
 	idle_threshold = 120
 	font = Hack 9
@@ -61,5 +59,4 @@
 [urgency_critical]
 	background = "#900000"
 	foreground = "#ffffff"
-	frame_color = "#ff0000"
 	timeout = 0
