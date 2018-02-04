@@ -1,8 +1,8 @@
 [Appearance]
-AntiAliasFonts=true
+AntiAliasFonts=false
 BoldIntense=true
 ColorScheme=base16-monokai
-Font=Hack,10,-1,5,50,0,0,0,0,0,Regular
+Font=xos4 Terminus,12,-1,5,50,0,0,0,0,0,Regular
 
 [General]
 Directory=/data
