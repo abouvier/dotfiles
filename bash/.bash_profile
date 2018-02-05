@@ -1,4 +1,5 @@
 #!/bin/bash
-# shellcheck source=/dev/null
+# shellcheck source=.profile
 [[ -r ~/.profile ]] && . ~/.profile
+# shellcheck source=.bashrc
 [[ -r ~/.bashrc ]] && . ~/.bashrc
