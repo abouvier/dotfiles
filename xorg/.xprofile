@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d ] ; then
 	for script in "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d/*.sh ; do
 		# shellcheck source=/dev/null
@@ -8,5 +8,5 @@ if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d ] ; then
 fi
 
 if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d ] ; then
-	cpp -P -Dbackground_opacity=95 <(cat "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d/*.Xresources) > ~/.Xresources
+	cat "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d/*.Xresourcess > ~/.Xresources
 fi
