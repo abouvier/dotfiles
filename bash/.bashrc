@@ -12,6 +12,8 @@ shopt -s autocd
 shopt -s histappend
 shopt -s checkwinsize
 shopt -s globstar
+shopt -s nocaseglob
+shopt -s failglob
 
 [[ -x /usr/bin/dircolors ]] && eval " $(dircolors -b)"
 
