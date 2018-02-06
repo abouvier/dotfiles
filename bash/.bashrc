@@ -22,6 +22,3 @@ if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/bash.d ] ; then
 	done
 	unset script
 fi
-
-# shellcheck source=.bash_aliases
-[[ -r ~/.bash_aliases ]] && . ~/.bash_aliases
