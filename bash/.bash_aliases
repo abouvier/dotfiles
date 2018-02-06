@@ -1,7 +1,5 @@
 #!/bin/bash
-alias sudo='sudo '
 alias unbuffer='unbuffer '
-alias se='sudoedit'
 alias hd='hexdump'
 alias free='LANG=C free -h'
 alias ta='tree -a'
