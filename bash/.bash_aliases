@@ -8,6 +8,4 @@ alias backup="rdiff-backup --exclude-if-present=.nobackup \
 	--exclude=**/lost+found \
 	--exclude=**/.Trash*"
 alias y='youtube-dl'
-alias colordiff='\diff --color=auto'
-alias diff='colordiff'
 alias cmatrix='cmatrix -b'
