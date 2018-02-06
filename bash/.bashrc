@@ -13,7 +13,6 @@ shopt -s histappend
 shopt -s checkwinsize
 shopt -s globstar
 shopt -s nocaseglob
-shopt -s failglob
 
 if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/bash.d ] ; then
 	for script in "${XDG_CONFIG_HOME:-$HOME/.config}"/bash.d/*.bash ; do
