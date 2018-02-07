@@ -2,6 +2,7 @@
 application/x-cd-image=vlc.desktop;
 application/xml=org.kde.kate.desktop;
 audio/midi=foobar2000.desktop;
+font/collection=kfontview.desktop;
 image/svg+xml-compressed=xnviewmp.desktop;
 image/webp=xnviewmp.desktop;
 image/x-dds=xnviewmp.desktop;
@@ -41,6 +42,7 @@ audio/x-opus+ogg=foobar2000.desktop;
 audio/x-speex+ogg=foobar2000.desktop;
 audio/x-vorbis+ogg=foobar2000.desktop;
 audio/x-wav=foobar2000.desktop;
+font/collection=kfontview.desktop;
 image/bmp=xnviewmp.desktop;
 image/gif=xnviewmp.desktop;
 image/jpeg=xnviewmp.desktop;
