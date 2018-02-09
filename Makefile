@@ -1,4 +1,4 @@
-IGNORE = vlc gtk yakuake
+IGNORE = vlc
 
 PKGS := $(filter-out $(IGNORE),$(shell ls -d */ | cut -d/ -f1))
 
