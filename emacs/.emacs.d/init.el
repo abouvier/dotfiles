@@ -18,6 +18,7 @@
 (setq column-number-mode t)
 (global-linum-mode t)
 (global-hl-line-mode 1)
+(setq visible-bell 1)
 
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 (add-hook 'after-init-hook #'global-flycheck-mode)
