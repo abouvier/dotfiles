@@ -1,13 +1,12 @@
-IGNORE = vlc
+DIRS = $(sort $(wildcard */))
+XDG_CONFIG_HOME ?= $(HOME)/.config
+IGNORE ?= $(strip $(file < $(XDG_CONFIG_HOME)/dotfiles/ignore))
+PKGS := $(filter-out $(IGNORE),$(DIRS:/=))
 
-PKGS := $(filter-out $(IGNORE),$(shell ls -d */ | cut -d/ -f1))
+.PHONY: install
+install:
+	stow --verbose --target ~ $(PKGS)
 
-install: $(PKGS)
-
-$(PKGS):
-	stow --verbose --target ~ $@
-
+.PHONY: uninstall
 uninstall:
 	stow --verbose --target ~ --delete $(PKGS)
-
-.PHONY: $(PKGS) uninstall
