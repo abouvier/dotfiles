@@ -17,8 +17,8 @@
 (setq vc-follow-symlinks nil)
 (setq column-number-mode t)
 (global-linum-mode t)
-(global-hl-line-mode 1)
-(setq visible-bell 1)
+(global-hl-line-mode t)
+(setq visible-bell t)
 (setq read-file-name-completion-ignore-case t)
 
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
