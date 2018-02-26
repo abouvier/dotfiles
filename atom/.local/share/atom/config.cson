@@ -34,6 +34,9 @@
   "linter-clang":
     clangDefaultCFlags: "-Wall -Wextra -pedantic -ansi"
     clangDefaultCppFlags: "-Wall -Wextra -pedantic -std=c++11"
+  "linter-eslint":
+    globalNodePath: "/usr/lib"
+    useGlobalEslint: true
   "linter-shellcheck":
     enableNotice: true
     userParameters: "-x"
