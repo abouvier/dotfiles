@@ -1,0 +1,2 @@
+#!/bin/sh
+repo-remove "$(pacconf --repo=aur Server | cut -d/ -f3-)"/aur.db.tar "$@"

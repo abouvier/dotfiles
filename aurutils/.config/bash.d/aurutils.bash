@@ -1,7 +1,6 @@
 #!/bin/bash
 alias ud='aur sync -u --no-ver --no-view --rmdeps -- $(pacman -Slq aur | egrep -- "-(bzr|git|hg|svn)$")'
 alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
-alias aur-remove='repo-remove "$(pacconf --repo=aur Server | cut -d/ -f3-)"/aur.db.tar'
 
 u () {
 	sudo pacman -Syu "$@"
