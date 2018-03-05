@@ -1,5 +1,5 @@
 URxvt.background: [95]base00
-URxvt.bell-command: paplay ~/.local/share/sounds/freedesktop/stereo/bell.oga
+URxvt.bell-command: canberra-gtk-play -i bell-terminal
 URxvt.depth: 32
 URxvt.font: -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 URxvt.perl-ext-common: bell-command
