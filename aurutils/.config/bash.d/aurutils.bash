@@ -6,7 +6,7 @@ alias uninstalled_packages='unbuffer pacman -Sl aur | grep -v install'
 u () {
 	sudo pacman -Syu "$@"
 	(($? == 130)) && return 130
-	aur sync -u --ignore="$(paste -sd, "${XDG_CONFIG_HOME:-$HOME/.config}"/aursync/ignore)" --rmdeps "$@"
+	aur sync -u --ignore="$(paste -sd, "${XDG_CONFIG_HOME:-$HOME/.config}"/aurutils/sync/ignore)" --rmdeps "$@"
 }
 
 s () {
