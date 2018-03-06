@@ -1,0 +1,6 @@
+[Event/Update]
+Action=Popup|Execute
+Execute=/usr/bin/canberra-gtk-play -i software-update-available
+Logfile=
+Sound=
+TTS=

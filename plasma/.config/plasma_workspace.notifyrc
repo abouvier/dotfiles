@@ -1,0 +1,29 @@
+[Event/Trash: emptied]
+Action=Execute
+Execute=/usr/bin/canberra-gtk-play -i trash-empty
+Logfile=
+TTS=
+
+[Event/beep]
+Action=Execute
+Execute=/usr/bin/canberra-gtk-play -i bell-window-system
+Logfile=
+TTS=
+
+[Event/exitkde]
+Action=Execute
+Execute=/usr/bin/canberra-gtk-play -i desktop-logout
+Logfile=
+TTS=
+
+[Event/messageWarning]
+Action=Execute|Taskbar
+Execute=/usr/bin/canberra-gtk-play -i dialog-warning
+Logfile=
+TTS=
+
+[Event/startkde]
+Action=Execute
+Execute=/usr/bin/canberra-gtk-play -i desktop-login
+Logfile=
+TTS=

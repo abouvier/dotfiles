@@ -1,0 +1,13 @@
+[Event/batteryLow]
+Action=Popup|Execute
+Execute=/usr/bin/canberra-gtk-play -i battery-low
+Logfile=
+Sound=
+TTS=
+
+[Event/callReceived]
+Action=Popup|Execute
+Execute=/usr/bin/canberra-gtk-play -i phone-incoming-call
+Logfile=
+Sound=
+TTS=

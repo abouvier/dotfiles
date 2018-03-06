@@ -1,0 +1,6 @@
+[Event/newScreenshotSaved]
+Action=Popup|Execute
+Execute=/usr/bin/canberra-gtk-play -i screen-capture
+Logfile=
+Sound=
+TTS=

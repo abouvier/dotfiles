@@ -1,0 +1,6 @@
+[Event/locked]
+Action=Execute
+Execute=/usr/bin/canberra-gtk-play -i desktop-screen-lock
+Logfile=
+Sound=
+TTS=

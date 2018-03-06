@@ -1,0 +1,6 @@
+[Event/BellVisible]
+Action=Execute
+Execute=/usr/bin/canberra-gtk-play -i bell-terminal
+Logfile=
+Sound=
+TTS=

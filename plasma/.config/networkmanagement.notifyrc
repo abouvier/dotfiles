@@ -1,0 +1,13 @@
+[Event/ConnectionActivated]
+Action=Popup|Execute
+Execute=/usr/bin/canberra-gtk-play -i network-connectivity-established
+Logfile=
+Sound=
+TTS=
+
+[Event/ConnectionDeactivated]
+Action=Popup|Execute
+Execute=/usr/bin/canberra-gtk-play -i network-connectivity-lost
+Logfile=
+Sound=
+TTS=
