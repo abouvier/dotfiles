@@ -16,9 +16,27 @@ Execute=/usr/bin/canberra-gtk-play -i desktop-logout
 Logfile=
 TTS=
 
+[Event/messageCritical]
+Action=Execute|Taskbar
+Execute=/usr/bin/canberra-gtk-play -i dialog-error
+Logfile=
+TTS=
+
+[Event/messageInformation]
+Action=Execute|Taskbar
+Execute=/usr/bin/canberra-gtk-play -i dialog-infomation
+Logfile=
+TTS=
+
 [Event/messageWarning]
 Action=Execute|Taskbar
 Execute=/usr/bin/canberra-gtk-play -i dialog-warning
+Logfile=
+TTS=
+
+[Event/messageboxQuestion]
+Action=Execute|Taskbar
+Execute=/usr/bin/canberra-gtk-play -i dialog-question
 Logfile=
 TTS=
 
