@@ -1,3 +1,6 @@
 #!/bin/sh
 export GNUPGHOME=${XDG_CONFIG_HOME:-$HOME/.config}/gnupg
-export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh
+# shellcheck disable=SC2155
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+gpg-connect-agent /bye
