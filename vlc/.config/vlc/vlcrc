@@ -2,7 +2,6 @@ avcodec-hw=vdpau_avcodec
 vbi-text=1
 qt-system-tray=0
 qt-video-autoresize=0
-#audio-filter=normvol
 video-on-top=1
 snapshot-path=/data/Images/Capture/VLC
 deinterlace=-1
