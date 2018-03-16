@@ -13,6 +13,7 @@ user_pref("findbar.highlightAll", true);
 user_pref("font.name-list.serif.x-unicode", "Noto Color Emoji");
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("general.autoScroll", true);
+user_pref("general.useragent.override.addons.mozilla.org", "Mozilla/5.0 (X11; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0");
 user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("gfx.font_rendering.fontconfig.max_generic_substitutions", 127);
