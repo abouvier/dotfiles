@@ -1,3 +1,4 @@
 #!/bin/sh
-killall --quiet unclutter
-unclutter --fork
+if ! pgrep -u "$USER" unclutter >/dev/null ; then
+	unclutter --fork
+fi
