@@ -11,7 +11,7 @@ Logfile=
 TTS=
 
 [Event/exitkde]
-Action=Execute
+Action=
 Execute=/usr/bin/canberra-gtk-play -i desktop-logout
 Logfile=
 TTS=
@@ -41,7 +41,7 @@ Logfile=
 TTS=
 
 [Event/startkde]
-Action=Execute
+Action=
 Execute=/usr/bin/canberra-gtk-play -i desktop-login
 Logfile=
 TTS=
