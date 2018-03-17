@@ -3,4 +3,4 @@
 require $_SERVER['HOME'].'/.local/lib/composer/autoload.php';
 $secret = trim(`kwallet-query --read-password secret --folder steam kdewallet`);
 $totp = SteamTotp\SteamTotp::getAuthCode($secret);
-`echo -n $totp | xclip -selection clipboard > /dev/null`;
+`echo -n $totp | xclip -selection clipboard >/dev/null`;
