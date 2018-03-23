@@ -11,5 +11,5 @@ u () {
 
 s () {
 	pacwoman -Ss -- "$@"
-	printf '(?=.*%s)' "${@,,}" | xargs aur pkglist -P | xargs -r aur search -i -k Popularity
+	printf '(?=.*%s)' "${@,,}" | xargs aur pkglist -P | xargs -r aur search -q -i -k Popularity
 }
