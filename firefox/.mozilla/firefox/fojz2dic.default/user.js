@@ -1,3 +1,4 @@
+user_pref("accessibility.blockautorefresh", true);
 user_pref("accessibility.typeaheadfind.enablesound", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("browser.backspace_action", 0);
