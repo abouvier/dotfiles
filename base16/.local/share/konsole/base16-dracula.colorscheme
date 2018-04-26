@@ -1,44 +1,44 @@
 [Background]
-Color=39,40,34
+Color=40,41,54
 
 [BackgroundIntense]
-Color=117,113,94
+Color=98,100,131
 
 [Color0]
-Color=39,40,34
+Color=40,41,54
 
 [Color0Intense]
-Color=117,113,94
+Color=98,100,131
 
 [Color1]
-Color=249,38,114
+Color=234,81,178
 
 [Color1Intense]
-Color=249,38,114
+Color=234,81,178
 
 [Color2]
-Color=166,226,46
+Color=235,255,135
 
 [Color2Intense]
-Color=166,226,46
+Color=235,255,135
 
 [Color3]
-Color=244,191,117
+Color=0,247,105
 
 [Color3Intense]
-Color=244,191,117
+Color=0,247,105
 
 [Color4]
-Color=102,217,239
+Color=98,214,232
 
 [Color4Intense]
-Color=102,217,239
+Color=98,214,232
 
 [Color5]
-Color=174,129,255
+Color=180,91,207
 
 [Color5Intense]
-Color=174,129,255
+Color=180,91,207
 
 [Color6]
 Color=161,239,228
@@ -47,18 +47,18 @@ Color=161,239,228
 Color=161,239,228
 
 [Color7]
-Color=248,248,242
+Color=233,233,244
 
 [Color7Intense]
-Color=249,248,245
+Color=247,247,251
 
 [Foreground]
-Color=248,248,242
+Color=233,233,244
 
 [ForegroundIntense]
-Color=249,248,245
+Color=247,247,251
 
 [General]
-Description=Base16 Monokai
+Description=Base16 Dracula
 Opacity=0.95
 Wallpaper=
