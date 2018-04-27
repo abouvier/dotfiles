@@ -4,12 +4,15 @@ alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
 alias uninstalled_packages='unbuffer pacman -Sl aur | grep -v install'
 
 u () {
-	sudo pacman -Syu "$@"
+	sudo pacman -Syu -- "$@"
 	(($? == 130)) && return 130
-	aur sync -u --ignore="$(paste -sd, "${XDG_CONFIG_HOME:-$HOME/.config}"/aurutils/sync/ignore)" --rmdeps "$@"
+	local packages=${XDG_CONFIG_HOME:-$HOME/.config}/aurutils/sync/ignore
+	aur sync --upgrades --ignore="$(paste -sd, "$packages")" --rmdeps -- "$@"
 }
 
 s () {
-	pacwoman -Ss -- "$@"
-	printf '(?=.*%s)' "${@,,}" | xargs aur pkglist -P | xargs -r aur search -q -i -k Popularity
+	pacman -Ss -- "$@"
+	printf '(?=.*%s)' "${@,,}" | xargs aur pkglist -P | sort \
+		| comm -23 - <(pacman -Slq aur | sort) \
+		| xargs -r aur search -q -i -k Popularity
 }
