@@ -1,5 +1,5 @@
 #!/bin/bash
-alias ud='aur sync --force --no-ver --no-view --rmdeps -- $(pacman -Slq aur | grep -E -- "-(bzr|git|hg|svn)$")'
+alias ud='aur vercmp-devel | cut -d: -f1 | aur sync --no-ver-shallow -'
 alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
 alias uninstalled_packages='unbuffer pacman -Sl aur | grep -v install'
 
