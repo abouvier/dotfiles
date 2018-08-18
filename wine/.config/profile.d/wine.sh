@@ -1,3 +1,3 @@
 #!/bin/sh
-export WINEPREFIX=${XDG_DATA_HOME:-$HOME/.local/share}/wine
+export WINEPREFIX=${XDG_CACHE_HOME:-$HOME/.cache}/wine
 export WINEDLLOVERRIDES=winemenubuilder.exe=d
