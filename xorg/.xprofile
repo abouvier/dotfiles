@@ -6,7 +6,3 @@ if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/xprofile.d ] ; then
 	done
 	unset script
 fi
-
-if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d ] ; then
-	cat "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d/*.Xresources > ~/.Xresources
-fi
