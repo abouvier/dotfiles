@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/dosbox -conf "${XDG_CONFIG_HOME:-$HOME/.config}"/dosbox/dosbox.conf "$@"
