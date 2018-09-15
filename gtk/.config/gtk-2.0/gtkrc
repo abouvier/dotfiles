@@ -1,12 +1,5 @@
-# File created by KDE Gtk Config
-# Configs for GTK2 programs 
+include "/etc/gtk-2.0/gtkrc"
 
-include "/usr/share/themes/Arc/gtk-2.0/gtkrc"
-style "user-font" 
-{
-	font_name="Noto Sans Regular"
-}
-widget_class "*" style "user-font"
 gtk-font-name="Noto Sans Regular 10"
 gtk-theme-name="Arc"
 gtk-icon-theme-name="Papirus"
