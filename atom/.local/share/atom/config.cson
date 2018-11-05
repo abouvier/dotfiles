@@ -42,7 +42,6 @@
     userParameters: "-x"
   "linter-ui-default":
     panelHeight: 64
-    showPanel: true
   minimap:
     plugins:
       "git-diff": true
