@@ -18,6 +18,7 @@ user_pref("general.useragent.override.addons.mozilla.org", "Mozilla/5.0 (X11; Li
 user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("gfx.font_rendering.fontconfig.max_generic_substitutions", 127);
+user_pref("layout.frame_rate", 144);
 user_pref("layout.word_select.stop_at_punctuation", true);
 user_pref("media.autoplay.enabled", true);
 user_pref("media.block-autoplay-until-in-foreground", true);
