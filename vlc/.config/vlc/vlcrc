@@ -1,4 +1,4 @@
-avcodec-hw=vdpau_avcodec
+avcodec-hw=any
 vbi-text=1
 qt-system-tray=0
 qt-video-autoresize=0
