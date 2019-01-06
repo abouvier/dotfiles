@@ -1,0 +1,24 @@
+#!/bin/sh
+[ -r /etc/X11/Xresources ] && xrdb -merge /etc/X11/Xresources
+
+if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d ] ; then
+	for resource in "${XDG_CONFIG_HOME:-$HOME/.config}"/X11/Xresources.d/?*.Xresources ; do
+		[ -r "$resource" ] && xrdb -merge -Dbackground_opacity=95 "$resource"
+	done
+	unset resource
+fi
+
+# temp fix
+export XDG_CURRENT_DESKTOP=KDE
+
+for dir in /etc/X11/xinit/xinitrc.d ${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinit/xinitrc.d ; do
+	if [ -d "$dir" ] ; then
+		for xinitrc in "$dir"/?*.sh ; do
+			# shellcheck source=/dev/null
+			[ -x "$xinitrc" ] && . "$xinitrc"
+		done
+		unset xinitrc
+	fi
+done
+
+exec startkde
