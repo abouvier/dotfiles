@@ -14,8 +14,8 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s nocaseglob
 
-if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/bash.d ] ; then
-	for script in "${XDG_CONFIG_HOME:-$HOME/.config}"/bash.d/*.bash ; do
+if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/bashrc.d ] ; then
+	for script in "${XDG_CONFIG_HOME:-$HOME/.config}"/bashrc.d/*.bash ; do
 		# shellcheck source=/dev/null
 		[ -x "$script" ] && . "$script"
 	done
