@@ -1,2 +1,2 @@
 #!/bin/sh
-[ "$XDG_CURRENT_DESKTOP" != KDE ] && export QT_QPA_PLATFORMTHEME=qt5ct
+[ "$1" != startkde ] && export QT_QPA_PLATFORMTHEME=qt5ct

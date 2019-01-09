@@ -10,9 +10,6 @@ if [ -d "$xresourcesdir" ] ; then
 	unset resource
 fi
 
-# temp fix
-export XDG_CURRENT_DESKTOP=KDE
-
 unset xresourcesdir
 
 xinitrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinit/xinitrc.d
@@ -29,4 +26,4 @@ done
 
 unset dir xinitrcdir
 
-exec startkde
+exec "${1:-startkde}"
