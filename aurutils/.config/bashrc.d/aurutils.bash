@@ -5,8 +5,7 @@ alias uninstalled_packages='unbuffer pacman -Sl aur | grep -v install'
 u () {
 	sudo pacman -Syu -- "$@" || return
 	local packages=${XDG_CONFIG_HOME:-$HOME/.config}/aurutils/sync/ignore
-	aur vercmp-devel | cut -d: -f1 | xargs aur sync --nover-shallow --upgrades \
-		--ignore="$(sed '/^#/d' "$packages" | fmt -1 | paste -sd,)" -- "$@"
+	aur sync --chroot --upgrades --ignore-file="$packages" -- "$@"
 }
 
 s () {
