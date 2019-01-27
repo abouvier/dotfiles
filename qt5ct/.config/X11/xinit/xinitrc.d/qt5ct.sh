@@ -1,2 +1,8 @@
 #!/bin/sh
-[ "$1" != startkde ] && export QT_QPA_PLATFORMTHEME=qt5ct
+session=${XDG_CONFIG_HOME:-$HOME/.config}/tdm/default
+
+if ! readlink "$session" | grep -q plasma ; then
+	export QT_QPA_PLATFORMTHEME=qt5ct
+fi
+
+unset session

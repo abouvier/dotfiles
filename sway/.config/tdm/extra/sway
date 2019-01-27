@@ -1,0 +1,5 @@
+#!/bin/sh
+export XKB_DEFAULT_LAYOUT=fr
+export XKB_DEFAULT_MODEL=pc105
+
+XDG_SESSION_TYPE=wayland exec sway

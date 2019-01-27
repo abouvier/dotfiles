@@ -26,4 +26,4 @@ done
 
 unset dir xinitrcdir
 
-exec tdm --xstart
+XDG_SESSION_TYPE=x11 exec tdm --xstart
