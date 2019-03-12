@@ -1,2 +1,0 @@
-#!/bin/sh
-exec /usr/bin/linphone --config="${XDG_CONFIG_HOME:-$HOME/.config}"/linphone/linphonerc "$@"
