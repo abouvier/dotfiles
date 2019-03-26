@@ -9,13 +9,13 @@ alias df='df -h'
 alias du='du -h'
 
 mine () {
-	for path in "$@" ; do
+	for path do
 		find "$path" -exec chmod g-w,o-rwx {} +
 	done
 }
 
 mine2 () {
-	for path in "$@" ; do
+	for path do
 		sudo chown -R "$USER:$USER" "$path"
 		find "$path" -type d -exec chmod 750 {} +
 		find "$path" -type f -exec chmod 640 {} +
@@ -23,7 +23,7 @@ mine2 () {
 }
 
 public () {
-	for path in "$@" ; do
+	for path do
 		find "$path" -type d -exec chmod a+rx {} +
 		find "$path" -type f -exec chmod a+r  {} +
 	done
