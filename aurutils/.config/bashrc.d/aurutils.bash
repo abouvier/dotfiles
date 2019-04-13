@@ -3,9 +3,9 @@ alias pacwoman='pacman --config=<(sed /aur/d /etc/pacman.conf)'
 alias uninstalled_packages='unbuffer pacman -Sl aur | grep -v install'
 
 u () {
-	sudo pacman -Syu -- "$@" || return
 	local packages=${XDG_CONFIG_HOME:-$HOME/.config}/aurutils/sync/ignore
-	aur sync --chroot --upgrades --ignore-file="$packages" -- "$@"
+	aur sync --upgrades --chroot --ignore-file="$packages" "$@" || return
+	sudo pacman -Syu "$@"
 }
 
 s () {
