@@ -11,3 +11,4 @@ input-record-path=/data/Vidéos/Enregistrement/VLC
 repeat=1
 one-instance=1
 metadata-network-access=0
+rtp-client-port=58810
