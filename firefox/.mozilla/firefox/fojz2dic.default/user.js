@@ -3,7 +3,7 @@ user_pref("accessibility.typeaheadfind.enablesound", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("browser.backspace_action", 0);
 user_pref("browser.onboarding.shieldstudy.enabled", false);
-user_pref("browser.tabs.insertRelatedAfterCurrent", true);
+user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("experiments.activeExperiment", false);
