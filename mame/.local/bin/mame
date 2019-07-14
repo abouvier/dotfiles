@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/lib/mame/mame -inipath "${XDG_CONFIG_HOME:-$HOME/.config}"/mame "$@"
