@@ -5,7 +5,8 @@ alias uninstalled_packages='unbuffer pacman -Sl aur | grep -v install'
 u () {
 	local packages=${XDG_CONFIG_HOME:-$HOME/.config}/aurutils/sync/ignore
 	aur sync --upgrades --chroot --ignore-file="$packages" "$@" || return
-	sudo pacman -Syu "$@"
+	sudo pacman -Syu "$@" || return
+	flatpak update
 }
 
 s () {
