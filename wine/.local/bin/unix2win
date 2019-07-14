@@ -1,0 +1,2 @@
+#!/bin/sh
+winepath -0 -u "$2" | xargs -0 "$1"
