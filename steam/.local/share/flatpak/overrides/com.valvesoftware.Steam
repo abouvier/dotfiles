@@ -1,0 +1,10 @@
+[Context]
+filesystems=!xdg-pictures;!xdg-music;/data/Jeux/Steam;
+features=!devel;
+devices=dri;!all;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[Environment]
+TZ=Europe/Paris
