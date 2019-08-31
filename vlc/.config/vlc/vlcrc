@@ -1,4 +1,4 @@
-avcodec-hw=any
+avcodec-hw=vaapi
 vbi-text=1
 qt-system-tray=0
 qt-video-autoresize=0
