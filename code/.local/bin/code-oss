@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/code-oss --extensions-dir="${XDG_CONFIG_HOME:-$HOME/.config}/Code - OSS/extensions" "$@"
