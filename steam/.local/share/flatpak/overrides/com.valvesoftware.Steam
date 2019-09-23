@@ -1,5 +1,5 @@
 [Context]
-filesystems=!xdg-pictures;!xdg-music;/data/Jeux/Steam;
+filesystems=!xdg-pictures;!xdg-music;~/Jeux/Steam;
 features=!devel;
 devices=dri;!all;
 

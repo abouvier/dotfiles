@@ -6,7 +6,6 @@ Font=xos4 Terminus,12,-1,5,50,0,0,0,0,0,Regular
 UseFontLineChararacters=true
 
 [General]
-Directory=/data
 Environment=TERM=xterm-256color
 Name=Bash
 Parent=FALLBACK/
