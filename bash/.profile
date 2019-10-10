@@ -1,6 +1,4 @@
 #!/bin/sh
-umask 027
-
 profiledir=${XDG_CONFIG_HOME:-$HOME/.config}/profile.d
 
 if [ -d "$profiledir" ] ; then
