@@ -1,6 +1,6 @@
 #!/bin/bash
 alias installed_packages="pacman -Qeq | sort \
-	| comm -23 - <(pacman -Qgq base base-devel plasma | sort)"
+	| comm -23 - <(pacman -Qgq base-devel plasma | sort)"
 alias si='pacman -Si'
 alias q='pacman -Qi'
 alias ql='pacman -Ql'
