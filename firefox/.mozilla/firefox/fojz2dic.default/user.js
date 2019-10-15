@@ -29,4 +29,5 @@ user_pref("security.ssl3.dhe_rsa_aes_128_sha", false);
 user_pref("security.ssl3.dhe_rsa_aes_256_sha", false);
 user_pref("security.webauth.u2f", true);
 user_pref("spellchecker.dictionary", "fr_FR");
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("toolkit.telemetry.enabled", false);
