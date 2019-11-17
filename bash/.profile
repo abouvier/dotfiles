@@ -1,4 +1,4 @@
-#!/bin/sh
+# shellcheck shell=sh
 profiledir=${XDG_CONFIG_HOME:-$HOME/.config}/profile.d
 
 if [ -d "$profiledir" ] ; then

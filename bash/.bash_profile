@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 # shellcheck source=.profile
 [[ -r ~/.profile ]] && . ~/.profile
 # shellcheck source=.bashrc
