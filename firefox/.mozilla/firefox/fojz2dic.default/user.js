@@ -11,7 +11,6 @@ user_pref("experiments.enabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("findbar.highlightAll", true);
-user_pref("font.name-list.serif.x-unicode", "Noto Color Emoji");
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("general.autoScroll", true);
 user_pref("general.warnOnAboutConfig", false);
