@@ -20,8 +20,14 @@
 (global-hl-line-mode t)
 (setq visible-bell t)
 (setq read-file-name-completion-ignore-case t)
+(global-column-enforce-mode t)
+(setq scroll-step 1)
 
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-(load-theme 'monokai t)
+(load-theme 'dracula t)
+
+(setq linum-format (lambda (line)
+	(let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
+		(propertize (format (format "%%%dd \u2502 " w) line) 'face 'linum))))
