@@ -1,0 +1,4 @@
+sameboy_border = "enabled"
+sameboy_color_correction_mode = "off"
+sameboy_high_pass_filter_mode = "off"
+sameboy_model = "Auto"
