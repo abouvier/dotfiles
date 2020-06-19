@@ -1,2 +1,2 @@
 #!/bin/bash
-alias e='emacsclient'
+alias e='emacsclient --tty'

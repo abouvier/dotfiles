@@ -1,2 +1,2 @@
 #!/bin/sh
-export VISUAL=emacsclient
+export VISUAL='emacsclient --tty'
