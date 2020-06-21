@@ -1,2 +1,2 @@
 #!/bin/sh
-export BASH_COMPLETION_USER_FILE=/usr/share/bash-complete-alias/complete_alias
+export BASH_COMPLETION_USER_FILE=${XDG_CONFIG_HOME:-$HOME/.config}/bash/completion
