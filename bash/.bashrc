@@ -14,7 +14,7 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s nocaseglob
 
-bashrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/bashrc.d
+bashrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/bash/bashrc.d
 
 if [ -d "$bashrcdir" ] ; then
 	for bashrc in "$bashrcdir"/?*.bash ; do
