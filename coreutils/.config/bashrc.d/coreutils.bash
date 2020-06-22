@@ -10,15 +10,15 @@ alias du='du -h'
 
 mine () {
 	for path do
-		find "$path" -exec chmod g-w,o-rwx {} +
+		find "$path" -exec chmod g-w,o-w {} +
 	done
 }
 
 mine2 () {
 	for path do
 		sudo chown -R "$USER:$USER" "$path"
-		find "$path" -type d -exec chmod 750 {} +
-		find "$path" -type f -exec chmod 640 {} +
+		find "$path" -type d -exec chmod 755 {} +
+		find "$path" -type f -exec chmod 644 {} +
 	done
 }
 
