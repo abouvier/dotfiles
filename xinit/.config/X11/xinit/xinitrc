@@ -18,7 +18,7 @@ for dir in /etc/X11/xinit/xinitrc.d $xinitrcdir ; do
 	if [ -d "$dir" ] ; then
 		for xinitrc in "$dir"/?*.sh ; do
 			# shellcheck source=/dev/null
-			[ -x "$xinitrc" ] && . "$xinitrc"
+			[ -r "$xinitrc" ] && . "$xinitrc"
 		done
 		unset xinitrc
 	fi

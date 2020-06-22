@@ -19,7 +19,7 @@ bashrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/bash/bashrc.d
 if [ -d "$bashrcdir" ] ; then
 	for bashrc in "$bashrcdir"/?*.bash ; do
 		# shellcheck source=/dev/null
-		[ -x "$bashrc" ] && . "$bashrc"
+		[ -r "$bashrc" ] && . "$bashrc"
 	done
 	unset bashrc
 fi
