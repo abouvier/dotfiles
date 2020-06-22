@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 export TODO_DIR=~/Documents/Tâches
 
 export TODO_FILE=$TODO_DIR/todo.txt

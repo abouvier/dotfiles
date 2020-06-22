@@ -1,3 +1,4 @@
+#!/bin/sh
 feh --no-fehbg --bg-fill ~/.local/share/wallpapers/WeekiWacheeSprings/contents/images/3027x3027.jpg
 compton &
 tint2 &
