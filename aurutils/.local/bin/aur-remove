@@ -1,2 +1,5 @@
-#!/bin/sh
-repo-remove "$(pacconf --repo=aur Server | cut -d/ -f3-)"/aur.db.tar "$@"
+#!/bin/bash
+repo=$(pacman-conf --repo-list | grep -- -aur$)
+server=$(pacman-conf --repo="$repo" Server | cut --delimiter=/ --fields=3-)
+repo-remove "$server/$repo".db.tar "$@" || exit 1
+paccache --remove --cachedir="$server" --keep=0 --verbose "$@"
