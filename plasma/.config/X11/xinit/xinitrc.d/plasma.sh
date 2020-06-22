@@ -1,4 +1,4 @@
-#!/bin/sh
+# shellcheck shell=sh
 session=${XDG_CONFIG_HOME:-$HOME/.config}/tdm/default
 
 if readlink "$session" | grep -q Plasma ; then

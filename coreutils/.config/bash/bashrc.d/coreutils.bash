@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 hash dircolors 2>/dev/null && eval " $(dircolors -b)"
 
 alias ls='ls -hF --color=auto --hide=lost+found'

@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 alias exclude_groups='sort | comm -23 - <(pacman -Qgq base-devel plasma | sort)'
 alias installed_packages='pacman -Qe'
 alias si='pacman -Si'

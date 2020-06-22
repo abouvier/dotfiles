@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 alias aur_repo='pacman-conf --repo-list | grep -- -aur$'
 alias local_repo='pacman-conf --repo-list | grep -- -local$'
 alias uninstalled_packages='unbuffer pacman -Sl $(pacman-conf --repo-list | egrep "aur|local") | grep -v install'

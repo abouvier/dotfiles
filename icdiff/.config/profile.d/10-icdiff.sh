@@ -1,2 +1,2 @@
-#!/bin/sh
+# shellcheck shell=sh
 export DIFFPROG=icdiff

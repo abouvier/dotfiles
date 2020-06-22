@@ -1,2 +1,2 @@
-#!/bin/bash
+# shellcheck shell=bash
 alias cmatrix='cmatrix -b'

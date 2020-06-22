@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 mi () {
 	mediainfo "$@" | sed -E --null-data \
 		-e ':loop' \

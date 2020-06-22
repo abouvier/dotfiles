@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 if [[ -r /usr/share/git/git-prompt.sh ]] ; then
 	. /usr/share/git/git-prompt.sh
 	if hash __git_ps1 2>/dev/null ; then
