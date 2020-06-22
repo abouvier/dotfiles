@@ -2,6 +2,7 @@ user_pref("accessibility.blockautorefresh", true);
 user_pref("accessibility.typeaheadfind.enablesound", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("browser.backspace_action", 0);
+user_pref("browser.meta_refresh_when_inactive.disabled", true);
 user_pref("browser.onboarding.shieldstudy.enabled", false);
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.urlbar.clickSelectsAll", true);
