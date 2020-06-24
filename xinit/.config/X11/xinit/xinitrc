@@ -3,8 +3,8 @@
 
 xresourcesdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/Xresources.d
 
-if [ -d "$xresourcesdir" ] ; then
-	for resource in "$xresourcesdir"/?*.Xresources ; do
+if [ -d "$xresourcesdir" ]; then
+	for resource in "$xresourcesdir"/?*.Xresources; do
 		[ -r "$resource" ] && xrdb -merge -Dbackground_opacity=95 "$resource"
 	done
 	unset resource
@@ -14,9 +14,9 @@ unset xresourcesdir
 
 xinitrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinit/xinitrc.d
 
-for dir in /etc/X11/xinit/xinitrc.d $xinitrcdir ; do
-	if [ -d "$dir" ] ; then
-		for xinitrc in "$dir"/?*.sh ; do
+for dir in /etc/X11/xinit/xinitrc.d $xinitrcdir; do
+	if [ -d "$dir" ]; then
+		for xinitrc in "$dir"/?*.sh; do
 			# shellcheck source=/dev/null
 			[ -r "$xinitrc" ] && . "$xinitrc"
 		done

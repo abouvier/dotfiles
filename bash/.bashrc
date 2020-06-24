@@ -16,8 +16,8 @@ shopt -s nocaseglob
 
 bashrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/bash/bashrc.d
 
-if [ -d "$bashrcdir" ] ; then
-	for bashrc in "$bashrcdir"/?*.bash ; do
+if [ -d "$bashrcdir" ]; then
+	for bashrc in "$bashrcdir"/?*.bash; do
 		# shellcheck source=/dev/null
 		[ -r "$bashrc" ] && . "$bashrc"
 	done
