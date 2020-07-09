@@ -1,2 +1,2 @@
 #!/bin/sh
-DESKTOP_SESSION=plasma exec startplasma-x11
+DE=kde DESKTOP_SESSION=plasma exec startplasma-x11
