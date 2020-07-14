@@ -1,2 +1,7 @@
 #!/bin/sh
-DE=kde XDG_SESSION_TYPE=wayland dbus-run-session startplasma-wayland
+export DE=kde
+export DESKTOP_SESSION=plasma
+export XDG_SESSION_DESKTOP=KDE
+export XDG_SESSION_TYPE=wayland
+
+dbus-run-session startplasma-wayland
