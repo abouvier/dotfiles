@@ -1,1 +1,6 @@
-/usr/bin/openbox-session
+#!/bin/sh
+export DESKTOP_SESSION=openbox
+export QT_QPA_PLATFORMTHEME=qt5ct
+export XDG_SESSION_DESKTOP=openbox
+
+exec openbox-session

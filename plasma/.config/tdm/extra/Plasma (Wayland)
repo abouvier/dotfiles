@@ -1,5 +1,4 @@
 #!/bin/sh
-export DE=kde
 export DESKTOP_SESSION=plasma
 export XDG_SESSION_DESKTOP=KDE
 export XDG_SESSION_TYPE=wayland
