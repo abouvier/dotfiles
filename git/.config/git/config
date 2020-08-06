@@ -6,3 +6,7 @@
 	default = simple
 [color]
 	ui = auto
+[pull]
+	rebase = true
+[diff]
+	colorMoved = zebra
