@@ -29,6 +29,8 @@
     zoomFontWhenCtrlScrolling: false
   "file-icons":
     coloured: false
+  "format-shell":
+    indent: 0
   "header-42":
     login: "abouvier"
   "linter-clang":
