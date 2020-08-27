@@ -1,2 +1,2 @@
 # shellcheck shell=sh
-export BROWSER=firefox
+export MOZ_X11_EGL=1
