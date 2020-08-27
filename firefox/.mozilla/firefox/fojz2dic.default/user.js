@@ -23,6 +23,7 @@ user_pref("layout.word_select.stop_at_punctuation", true);
 user_pref("media.autoplay.enabled", true);
 user_pref("media.block-autoplay-until-in-foreground", true);
 user_pref("middlemouse.contentLoadURL", false);
+user_pref("network.security.esni.enabled", true);
 user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("security.ssl3.dhe_rsa_aes_128_sha", false);
