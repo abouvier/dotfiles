@@ -12,7 +12,6 @@ shopt -s autocd
 shopt -s checkwinsize
 shopt -s globstar
 shopt -s histappend
-shopt -s nocaseglob
 
 if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/bash/bashrc.d ]; then
 	for bashrc in "${XDG_CONFIG_HOME:-$HOME/.config}"/bash/bashrc.d/?*.bash; do
