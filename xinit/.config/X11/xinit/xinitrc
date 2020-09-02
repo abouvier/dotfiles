@@ -1,29 +1,24 @@
 #!/bin/sh
-[ -r /etc/X11/Xresources ] && xrdb -merge /etc/X11/Xresources
+sysresources=/etc/X11/Xresources
+sysxinitrcdir=/etc/X11/xinit/xinitrc.d
+userresourcesdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/Xresources.d
+userxinitrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinit/xinitrc.d
 
-xresourcesdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/Xresources.d
+[ -r "$sysresources" ] && xrdb -merge "$sysresources"
 
-if [ -d "$xresourcesdir" ]; then
-	for resource in "$xresourcesdir"/?*.Xresources; do
+if [ -d "$userresourcesdir" ]; then
+	for resource in "$userresourcesdir"/?*.Xresources; do
 		[ -r "$resource" ] && xrdb -merge -Dbackground_opacity=95 "$resource"
 	done
-	unset resource
 fi
 
-unset xresourcesdir
-
-xinitrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinit/xinitrc.d
-
-for dir in /etc/X11/xinit/xinitrc.d $xinitrcdir; do
+for dir in "$sysxinitrcdir" "$userxinitrcdir"; do
 	if [ -d "$dir" ]; then
 		for xinitrc in "$dir"/?*.sh; do
 			# shellcheck source=/dev/null
 			[ -r "$xinitrc" ] && . "$xinitrc"
 		done
-		unset xinitrc
 	fi
 done
-
-unset dir xinitrcdir
 
 XDG_SESSION_TYPE=x11 exec tdm --xstart
