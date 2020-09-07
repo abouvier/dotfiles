@@ -8,23 +8,23 @@ alias l='ll'
 alias df='df -h'
 alias du='du -h'
 
-mine () {
-	for path do
+mine() {
+	for path; do
 		find "$path" -exec chmod g-w,o-w {} +
 	done
 }
 
-mine2 () {
-	for path do
+mine2() {
+	for path; do
 		sudo chown -R "$USER:$USER" "$path"
 		find "$path" -type d -exec chmod 755 {} +
 		find "$path" -type f -exec chmod 644 {} +
 	done
 }
 
-public () {
-	for path do
+public() {
+	for path; do
 		find "$path" -type d -exec chmod a+rx {} +
-		find "$path" -type f -exec chmod a+r  {} +
+		find "$path" -type f -exec chmod a+r {} +
 	done
 }

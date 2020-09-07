@@ -31,6 +31,7 @@
     coloured: false
   "format-shell":
     indent: 0
+    indentSwitch: true
   "header-42":
     login: "abouvier"
   "linter-clang":
