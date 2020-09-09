@@ -7,8 +7,8 @@ userxinitrcdir=${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinit/xinitrc.d
 [ -r "$sysresources" ] && xrdb -merge "$sysresources"
 
 if [ -d "$userresourcesdir" ]; then
-	for resource in "$userresourcesdir"/?*.Xresources; do
-		[ -r "$resource" ] && xrdb -merge -Dbackground_opacity=95 "$resource"
+	for resources in "$userresourcesdir"/?*.Xresources; do
+		[ -r "$resources" ] && xrdb -merge -Dbackground_opacity=95 "$resources"
 	done
 fi
 

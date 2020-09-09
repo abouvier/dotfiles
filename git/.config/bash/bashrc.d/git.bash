@@ -1,8 +1,8 @@
 # shellcheck shell=bash
 if [[ -r /usr/share/git/git-prompt.sh ]]; then
-	. /usr/share/git/git-prompt.sh
+	source /usr/share/git/git-prompt.sh
 	if hash __git_ps1 2>/dev/null; then
-		color () {
+		color() {
 			local IFS=\;
 			echo "\\[\\e[${*:2}m\\]$1\\[\\e[0m\\]"
 		}

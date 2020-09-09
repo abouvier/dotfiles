@@ -7,4 +7,5 @@ if [ -d /usr/lib/systemd/user-environment-generators ]; then
 	done
 	unset generator
 	eval "$option"
+	unset option
 fi
