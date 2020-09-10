@@ -1,5 +1,5 @@
 # shellcheck shell=bash
-mi () {
+mi() {
 	mediainfo "$@" | sed -E --null-data \
 		-e ':loop' \
 		-e 's/\N*  : / : /g' \

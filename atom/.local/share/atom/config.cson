@@ -30,6 +30,7 @@
   "file-icons":
     coloured: false
   "format-shell":
+    binary: true
     indent: 0
     indentSwitch: true
   "header-42":
