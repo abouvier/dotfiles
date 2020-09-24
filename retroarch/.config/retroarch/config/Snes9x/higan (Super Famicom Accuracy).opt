@@ -1,5 +1,0 @@
-higan_sfc_blur_emulation = "OFF"
-higan_sfc_color_emulation = "OFF"
-higan_sfc_internal_resolution = "512x480"
-higan_sfc_scanline_emulation = "OFF"
-higan_sfc_sgb_bios = "SGB2.sfc/"

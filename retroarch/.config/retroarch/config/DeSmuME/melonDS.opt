@@ -1,6 +1,0 @@
-melonds_boot_directly = "enabled"
-melonds_opengl_renderer = "disabled"
-melonds_opengl_resolution = "1x native (256x192)"
-melonds_screen_layout = "Top/Bottom"
-melonds_threaded_renderer = "disabled"
-melonds_touch_mode = "disabled"
