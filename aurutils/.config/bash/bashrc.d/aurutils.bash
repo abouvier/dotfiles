@@ -1,13 +1,11 @@
 # shellcheck shell=bash
-alias aur_repo='pacman-conf --repo-list | grep -- -aur$'
-alias local_repo='pacman-conf --repo-list | grep -- -local$'
-alias uninstalled_packages='unbuffer pacman -Sl $(pacman-conf --repo-list | egrep "aur|local") | grep -v install'
-alias b='aur sync --chroot --database="$(aur_repo)" --rebuild'
-alias bl='aur build --chroot --database="$(local_repo)" --pacman-conf=${XDG_DATA_HOME:-$HOME/.local/share}/devtools/pacman-aur.conf'
+alias uninstalled_packages='aur repo --repo-list | cut -f1 | xargs -r unbuffer pacman -Sl | grep -v \\[install'
+alias b='aur sync --chroot --rebuild'
+alias bl='aur build --chroot --database=$USER-local --pacman-conf=${XDG_DATA_HOME:-$HOME/.local/share}/devtools/pacman-aur.conf'
 
 u() {
 	local packages=${XDG_CONFIG_HOME:-$HOME/.config}/aurutils/sync/ignore
-	aur sync --chroot --database="$(aur_repo)" --ignore-file="$packages" --upgrades "$@" || return
+	aur sync --chroot --ignore-file="$packages" --upgrades "$@" || return
 	sudo pacman -Syu "$@" || return
 	flatpak update
 }
@@ -15,6 +13,6 @@ u() {
 s() {
 	pacman -Ss -- "$@"
 	printf '(?=.*%s)' "${@,,}" | xargs aur pkglist -P | sort \
-		| comm -23 - <(pacman -Slq "$(aur_repo)" | sort) \
+		| comm -23 - <(pacman -Slq "$AUR_REPO" | sort) \
 		| xargs -r aur search -q -i -k Popularity
 }
