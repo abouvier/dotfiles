@@ -1,10 +1,8 @@
 # shellcheck shell=bash
-if [[ -r ~/.profile ]]; then
-	# shellcheck source=.profile
-	source ~/.profile
-fi
+# shellcheck source=.profile
+source ~/.profile
 
-if [[ -r ~/.bashrc ]]; then
-	# shellcheck source=.bashrc
-	source ~/.bashrc
-fi
+source /etc/bash.bashrc
+
+# shellcheck source=.bashrc
+source ~/.bashrc
