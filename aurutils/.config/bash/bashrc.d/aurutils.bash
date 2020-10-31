@@ -1,11 +1,10 @@
 # shellcheck shell=bash
-alias uninstalled_packages='aur repo --repo-list | cut -f1 | xargs -r unbuffer pacman -Sl | grep -v \\[install'
+alias uninstalled_packages='aur repo --repo-list | xargs -r unbuffer pacman -Sl | grep -v \\[install'
 alias b='aur sync --chroot --rebuild'
-alias bl='aur build --chroot --database=$USER-local --pacman-conf=${XDG_DATA_HOME:-$HOME/.local/share}/devtools/pacman-aur.conf'
+alias bl='aur build --chroot --database=$USER-local --namcap'
 
 u() {
-	local packages=${XDG_CONFIG_HOME:-$HOME/.config}/aurutils/sync/ignore
-	aur sync --chroot --ignore-file="$packages" --upgrades "$@" || return
+	aur sync --chroot --upgrades "$@" || return
 	sudo pacman -Syu "$@" || return
 	flatpak update
 }

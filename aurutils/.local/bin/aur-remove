@@ -1,44 +1,36 @@
 #!/bin/bash
-repo=$AUR_REPO
-
 usage() {
 	echo 'usage: remove [-d repo] [--] pkgname [pkgname...]' >&2
 	exit 1
 }
 
-tmp=$(getopt -o 'd:' --long 'database:' -n 'aur-remove' -- "$@")
-
-# shellcheck disable=SC2181
-if (($?)); then
+if ! tmp=$(getopt --long database:,repo: --name aur-remove d: "$@"); then
 	usage
 fi
 
 eval set -- "$tmp"
-unset tmp
 
 while true; do
 	case $1 in
-		'-d' | '--database')
-			repo=$2
+		-d | --database | --repo)
+			AUR_REPO=$2
 			shift 2
 			continue
 			;;
-		'--')
+		--)
 			shift
 			break
 			;;
 	esac
 done
 
-if [[ ! $repo || $# -eq 0 ]]; then
+if [[ ! $AUR_REPO || $# -eq 0 ]]; then
 	usage
 fi
 
-database=$(aur repo --database="$repo")
-
-if ! database=$(readlink -e -- "$database"); then
+if ! repo_path=$(aur repo --path); then
 	exit 1
 fi
 
-repo-remove "$database" "$@"
-paccache --remove --cachedir="${database%/*}" --keep=0 --verbose "$@"
+repo-remove "$repo_path" "$@"
+paccache --remove --cache "${repo_path%/*}" --keep 0 --verbose "$@"
