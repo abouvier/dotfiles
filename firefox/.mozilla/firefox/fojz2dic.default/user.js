@@ -18,7 +18,6 @@ user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("gfx.canvas.azure.accelerated", true);
 user_pref("gfx.font_rendering.fontconfig.max_generic_substitutions", 127);
-user_pref("gfx.webrender.all", true);
 user_pref("layers.acceleration.force-enabled", true);
 user_pref("layout.word_select.stop_at_punctuation", true);
 user_pref("media.autoplay.enabled", true);
