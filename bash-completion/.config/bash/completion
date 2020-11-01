@@ -1,8 +1,0 @@
-# shellcheck shell=bash
-if [[ -d ${XDG_CONFIG_HOME:-$HOME/.config}/bash/completion.d ]]; then
-	for completion in "${XDG_CONFIG_HOME:-$HOME/.config}"/bash/completion.d/?*.bash; do
-		# shellcheck source=/dev/null
-		[[ -r $completion ]] && source "$completion"
-	done
-	unset completion
-fi
