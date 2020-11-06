@@ -14,6 +14,4 @@ if [ -d "${XDG_CONFIG_HOME:-$HOME/.config}"/profile.d ]; then
 	unset profile
 fi
 
-prepend_path ~/.local/bin
-
 unset -f prepend_path
