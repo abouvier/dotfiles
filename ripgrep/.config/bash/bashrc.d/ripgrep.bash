@@ -1,4 +1,2 @@
 # shellcheck shell=bash
-ft() {
-	rg --follow --hidden --no-messages "$1" "${2:-.}"
-}
+alias ft='rg --follow --hidden --no-messages'
