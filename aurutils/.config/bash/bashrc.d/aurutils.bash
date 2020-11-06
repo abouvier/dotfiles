@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 alias uninstalled_packages='aur repo --repo-list | xargs -r unbuffer pacman -Sl | grep -v \\[install'
 alias b='aur sync --chroot --rebuild'
-alias bl='aur build --chroot --database=$USER-local --namcap'
+alias bl='aur build --chroot --database "$USER"-local --force'
 
 u() {
 	aur sync --chroot --upgrades "$@" || return
