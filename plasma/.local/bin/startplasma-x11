@@ -1,0 +1,5 @@
+#!/bin/sh
+export DESKTOP_SESSION=plasma
+export XDG_SESSION_DESKTOP=KDE
+
+exec /usr/bin/startplasma-x11

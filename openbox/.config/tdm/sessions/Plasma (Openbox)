@@ -1,5 +1,1 @@
-#!/bin/sh
-export DESKTOP_SESSION=plasma
-export XDG_SESSION_DESKTOP=KDE
-
-exec openbox-kde-session
+../../../.local/bin/openbox-kde-session
