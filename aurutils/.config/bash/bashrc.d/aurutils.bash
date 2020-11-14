@@ -1,10 +1,10 @@
 # shellcheck shell=bash
 alias uninstalled_packages='aur repo --repo-list | xargs -r unbuffer pacman -Sl | grep -v \\[install'
-alias b='aur sync --chroot --rebuild'
-alias bl='aur build --chroot --database "$USER"-local --force'
+alias b='aur sync --chroot --rebuild --sign'
+alias bl='aur build --chroot --database "$USER"-local --force --sign'
 
 u() {
-	aur sync --chroot --upgrades "$@" || return
+	aur sync --chroot --sign --upgrades "$@" || return
 	sudo pacman -Syu "$@" || return
 	flatpak update
 }
