@@ -63,3 +63,6 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".source.yaml":
+  editor:
+    tabLength: 2

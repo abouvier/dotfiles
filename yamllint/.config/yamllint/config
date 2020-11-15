@@ -1,4 +1,4 @@
 extends: default
 
 rules:
-    document-start: disable
+  document-start: disable
