@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 [[ $- =~ i ]] || return
 
-shopt -s autocd globstar histappend
+shopt -s autocd globstar histappend nocaseglob
 
 HISTCONTROL=erasedups:ignoreboth
 HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/bash/history
