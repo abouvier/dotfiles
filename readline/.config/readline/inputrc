@@ -1,5 +1,3 @@
-# -*- conf -*-
-
 $include /etc/inputrc
 
 set colored-stats on
