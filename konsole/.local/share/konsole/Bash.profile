@@ -2,7 +2,7 @@
 AntiAliasFonts=false
 BoldIntense=true
 ColorScheme=base16-dracula
-Font=xos4 Terminus,12,-1,5,50,0,0,0,0,0,Regular
+Font=Terminus,12,-1,5,57,0,0,0,0,0,Medium
 UseFontLineChararacters=true
 
 [General]
