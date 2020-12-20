@@ -1,5 +1,6 @@
 [Added Associations]
 application/octet-stream=org.kde.okteta.desktop;
+application/vnd.adobe.flash.movie=ruffle.desktop;
 application/x-bps-patch=org.kde.okteta.desktop;
 application/x-cd-image=vlc.desktop;
 application/x-ips-patch=org.kde.okteta.desktop;
@@ -7,6 +8,7 @@ application/x-shellscript=org.kde.kwrite.desktop;
 application/xml=org.kde.kwrite.desktop;
 audio/midi=foobar2000.desktop;
 font/collection=kfontview.desktop;
+image/avif=org.nomacs.ImageLounge.desktop;
 image/svg+xml-compressed=org.nomacs.ImageLounge.desktop;
 image/webp=org.nomacs.ImageLounge.desktop;
 image/x-dds=org.nomacs.ImageLounge.desktop;
@@ -26,6 +28,7 @@ video/x-msvideo=mpv.desktop;
 [Default Applications]
 application/octet-stream=org.kde.okteta.desktop;
 application/pdf=okularApplication_pdf.desktop;
+application/vnd.adobe.flash.movie=ruffle.desktop;
 application/vnd.comicbook+zip=mcomix.desktop;
 application/x-bittorrent=qBittorrent.desktop;
 application/x-bps-patch=org.kde.okteta.desktop;
@@ -52,6 +55,7 @@ audio/x-speex+ogg=foobar2000.desktop;
 audio/x-vorbis+ogg=foobar2000.desktop;
 audio/x-wav=foobar2000.desktop;
 font/collection=kfontview.desktop;
+image/avif=org.nomacs.ImageLounge.desktop;
 image/bmp=org.nomacs.ImageLounge.desktop;
 image/gif=org.nomacs.ImageLounge.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
