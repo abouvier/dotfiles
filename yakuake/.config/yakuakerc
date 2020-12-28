@@ -39,3 +39,4 @@ view-full-screen=Ctrl+Shift+F11
 [Window]
 DynamicTabTitles=true
 Height=80
+ShowSystrayIcon=false
