@@ -1,10 +1,11 @@
 {
-	"require": {
-		"asm89/twig-lint": "@dev",
-		"doctormckay/steam-totp": "^1.0"
-	},
 	"config": {
-		"vendor-dir": "~/.local/lib/composer",
-		"bin-dir": "~/.local/bin"
+		"bin-dir": "~/.local/bin",
+		"vendor-dir": "~/.local/lib/composer"
+	},
+	"require": {
+		"asm89/twig-lint": "@stable",
+		"doctormckay/steam-totp": "@stable",
+		"friendsofphp/php-cs-fixer": "@stable"
 	}
 }
