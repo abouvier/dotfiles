@@ -1,0 +1,4 @@
+#!/bin/bash
+printf '(?=.*%s)' "${@,,}" | xargs aur pkglist -P | sort \
+	| comm -23 - <(pacman -Slq "$AUR_REPO" | sort) \
+	| xargs -r aur search -q -i -k Popularity
