@@ -34,3 +34,4 @@ user_pref("security.webauth.u2f", true);
 user_pref("spellchecker.dictionary", "fr_FR");
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("toolkit.telemetry.enabled", false);
+user_pref("widget.use-xdg-desktop-portal", true);
