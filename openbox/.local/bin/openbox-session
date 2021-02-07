@@ -3,4 +3,4 @@ export DESKTOP_SESSION=openbox
 export QT_QPA_PLATFORMTHEME=qt5ct
 export XDG_SESSION_DESKTOP=openbox
 
-exec /usr/bin/openbox-session
+exec /usr/bin/openbox-session "$@"

@@ -6,4 +6,4 @@ export SDL_VIDEODRIVER=wayland
 export XDG_SESSION_DESKTOP=sway
 export XDG_SESSION_TYPE=wayland
 
-exec /usr/bin/sway
+exec /usr/bin/sway "$@"
