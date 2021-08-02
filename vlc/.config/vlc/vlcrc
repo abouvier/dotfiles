@@ -9,6 +9,6 @@ qt-system-tray=0
 qt-video-autoresize=0
 repeat=1
 rtp-client-port=58810
-snapshot-path=Images/Captures d'écran/VLC
+snapshot-path=Images/Caméra/VLC
 vbi-text=1
 video-on-top=1
