@@ -32,5 +32,10 @@ if ! repo_path=$(aur repo --path); then
 	exit 1
 fi
 
-repo-remove --sign "$repo_path" "$@"
+if [[ -e $repo_path.sig ]]; then
+	repo_opts=(--sign)
+fi
+
+repo-remove "${repo_opts[@]}" "$repo_path" "$@"
+
 paccache --remove --cache "${repo_path%/*}" --keep 0 --verbose "$@"
