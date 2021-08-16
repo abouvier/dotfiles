@@ -6,6 +6,7 @@
 	"require": {
 		"asm89/twig-lint": "@stable",
 		"doctormckay/steam-totp": "@stable",
-		"friendsofphp/php-cs-fixer": "@stable"
+		"friendsofphp/php-cs-fixer": "@stable",
+		"nikic/php-parser": "@stable"
 	}
 }
