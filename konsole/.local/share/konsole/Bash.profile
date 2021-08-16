@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=false
 BoldIntense=true
-ColorScheme=base16-dracula
+ColorScheme=Dracula
 Font=Terminus,12,-1,5,57,0,0,0,0,0,Medium
 UseFontLineChararacters=true
 
