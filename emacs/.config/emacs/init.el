@@ -1,5 +1,5 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-(when (file-exists-p custom-file)
+(if (file-exists-p custom-file)
 	(load custom-file))
 
 (require 'package)
@@ -8,7 +8,7 @@
 
 (require 'generic-x)
 
-(setq auto-save-default nil)
+(setq auto-save-list-file-prefix nil)
 (setq make-backup-files nil)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
