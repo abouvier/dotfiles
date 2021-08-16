@@ -1,4 +1,5 @@
-avcodec-hw=vaapi
+aout=pulse
+avcodec-hw=none
 deinterlace=-1
 deinterlace-mode=yadif2x
 input-record-path=Vidéos/Enregistrements/VLC
