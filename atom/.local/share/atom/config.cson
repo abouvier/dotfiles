@@ -64,6 +64,9 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".cmake.source":
+  editor:
+    tabType: "auto"
 ".source.yaml":
   editor:
     tabLength: 2
