@@ -6,7 +6,7 @@ Font=Terminus,12,-1,5,57,0,0,0,0,0,Medium
 UseFontLineChararacters=true
 
 [General]
-Environment=TERM=xterm-256color
+Environment=TERM=konsole-direct
 Name=Bash
 Parent=FALLBACK/
 ShowTerminalSizeHint=false
