@@ -22,6 +22,8 @@
 (setq read-file-name-completion-ignore-case t)
 (setq scroll-step 1)
 
+(add-to-list 'term-file-aliases '("alacritty" . "xterm"))
+
 (setq-default display-fill-column-indicator-column 80)
 (add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
