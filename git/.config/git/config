@@ -1,7 +1,7 @@
 [user]
 	name = Alexandre Bouvier
 	email = contact@amb.tf
-	signingkey = 0xD0D459D295D13EAF
+	signingkey = 0x337C0D54DCDD6E57
 [push]
 	default = simple
 [color]
