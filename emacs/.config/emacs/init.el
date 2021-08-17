@@ -20,8 +20,10 @@
 (global-hl-line-mode t)
 (setq visible-bell t)
 (setq read-file-name-completion-ignore-case t)
-(global-column-enforce-mode t)
 (setq scroll-step 1)
+
+(setq-default display-fill-column-indicator-column 80)
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 (add-hook 'after-init-hook #'global-flycheck-mode)
