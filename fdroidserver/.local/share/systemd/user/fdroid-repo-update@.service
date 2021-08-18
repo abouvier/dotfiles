@@ -1,0 +1,10 @@
+[Unit]
+Description=Update apps in repo %h%f
+ConditionDirectoryNotEmpty=%h%f/repo
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h%f
+ExecStart=gplaycli --update repo --yes --verbose
+ExecStartPost=fdroid update
+ExecStartPost=fdroid deploy
