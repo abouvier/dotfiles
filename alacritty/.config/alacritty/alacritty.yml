@@ -1,3 +1,6 @@
+import:
+  - /usr/share/alacritty/dracula.yml
+
 env:
   TERM: alacritty-direct
 
@@ -7,31 +10,5 @@ font:
   size: 12.0
 
 draw_bold_text_with_bright_colors: true
-
-colors:
-  primary:
-    background: '#282936'
-    foreground: '#e9e9f4'
-  cursor:
-    text: '#000000'
-    cursor: '#e9e9f4'
-  normal:
-    black: '#282936'
-    red: '#ea51b2'
-    green: '#ebff87'
-    yellow: '#00f769'
-    blue: '#62d6e8'
-    magenta: '#b45bcf'
-    cyan: '#a1efe4'
-    white: '#e9e9f4'
-  bright:
-    black: '#626483'
-    red: '#ea51b2'
-    green: '#ebff87'
-    yellow: '#00f769'
-    blue: '#62d6e8'
-    magenta: '#b45bcf'
-    cyan: '#a1efe4'
-    white: '#f7f7fb'
 
 background_opacity: 0.95
