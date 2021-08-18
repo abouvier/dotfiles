@@ -83,4 +83,10 @@
 		</magic>
 		<glob pattern="*.rvz"/>
 	</mime-type>
+	<mime-type type="text/x-arduino">
+		<comment>Arduino source code</comment>
+		<comment xml:lang="fr">code source Arduino</comment>
+		<sub-class-of type="text/x-c++src"/>
+		<glob pattern="*.ino"/>
+	</mime-type>
 </mime-info>
