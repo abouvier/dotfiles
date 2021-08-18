@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/x-genesis-rom">
+		<comment>Genesis ROM</comment>
+		<comment xml:lang="fr">ROM Mega Drive</comment>
+		<generic-icon name="application-x-executable"/>
+		<magic priority="50">
+			<match type="string" value="SEGA GENESIS" offset="256"/>
+			<match type="string" value="SEGA MEGA DRIVE" offset="256"/>
+			<match type="string" value="SEGA_MEGA_DRIVE" offset="256"/>
+			<match type="string" value="EAGN" offset="640"/>
+			<match type="string" value="EAMG" offset="640"/>
+		</magic>
+		<glob pattern="*.gen"/>
+		<glob pattern="*.smd"/>
+		<glob pattern="*.sgd"/>
+		<glob pattern="*.md"/>
+	</mime-type>
+	<mime-type type="application/x-atari-jaguar-rom">
+		<comment>Atari Jaguar ROM</comment>
+		<comment xml:lang="fr">ROM Atari Jaguar</comment>
+		<generic-icon name="application-x-executable"/>
+		<glob pattern="*.j64"/>
+	</mime-type>
+	<mime-type type="application/x-amstrad-cpc-rom">
+		<comment>Amstrad CPC ROM</comment>
+		<comment xml:lang="fr">ROM Amstrad CPC</comment>
+		<generic-icon name="application-x-executable"/>
+		<magic>
+			<match type="string" value="EXTENDED CPC DSK File" offset="0"/>
+			<match type="string" value="MV - CPCEMU" offset="0"/>
+		</magic>
+		<glob pattern="*.dsk"/>
+	</mime-type>
+	<mime-type type="application/x-amiga-rom">
+		<comment>Amiga ROM</comment>
+		<comment xml:lang="fr">ROM Amiga</comment>
+		<generic-icon name="application-x-executable"/>
+		<magic>
+			<match type="string" value="CAPS" offset="0"/>
+		</magic>
+		<glob pattern="*.ipf"/>
+	</mime-type>
+	<mime-type type="application/x-sbi">
+		<comment>SBI File</comment>
+		<comment xml:lang="fr">fichier SBI</comment>
+		<generic-icon name="text-x-hex"/>
+		<magic>
+			<match type="string" value="SBI" offset="0"/>
+		</magic>
+		<glob pattern="*.sbi"/>
+	</mime-type>
+	<mime-type type="application/x-nintendo-3ds-app">
+		<comment>Nintendo 3DS executable</comment>
+		<comment xml:lang="fr">exécutable Nintendo 3DS</comment>
+		<generic-icon name="application-x-executable"/>
+		<magic>
+			<match type="string" value="NCCH" offset="256"/>
+		</magic>
+		<glob pattern="*.cxi"/>
+		<glob pattern="*.app"/>
+	</mime-type>
+	<mime-type type="application/x-nintendo-switch-xci">
+		<comment>Nintendo Switch encrypted ROM</comment>
+		<comment xml:lang="fr">ROM Nintendo Switch chiffrée</comment>
+		<generic-icon name="application-x-executable"/>
+		<glob pattern="*.xci"/>
+	</mime-type>
+	<mime-type type="application/x-nintendo-switch-nsp">
+		<comment>Nintendo Submission Package</comment>
+		<generic-icon name="application-x-executable"/>
+		<magic>
+			<match type="string" value="PFS0" offset="0"/>
+		</magic>
+		<glob pattern="*.nsp"/>
+	</mime-type>
+	<mime-type type="application/x-rvz">
+		<comment>Compressed GameCube/Wii disc</comment>
+		<comment xml:lang="fr">disque GameCube/Wii compressé</comment>
+		<generic-icon name="application-x-compressed-iso"/>
+		<magic>
+			<match type="string" value="RVZ\x1" offset="0"/>
+		</magic>
+		<glob pattern="*.rvz"/>
+	</mime-type>
+</mime-info>
