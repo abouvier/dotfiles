@@ -4,7 +4,7 @@
 shopt -s autocd globstar histappend nocaseglob
 
 HISTCONTROL=erasedups:ignoreboth
-HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/bash/history
+HISTFILE=${XDG_STATE_HOME:-$HOME/.local/state}/bash/history
 HISTSIZE=10000
 PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND;}'history -a'
 
