@@ -1,2 +1,5 @@
-(setq package-user-dir (expand-file-name "emacs/elpa" (or (getenv "XDG_DATA_HOME") "~/.local/share")))
+(require 'xdg)
+
+(setq package-user-dir (expand-file-name "emacs/elpa" (xdg-data-home)))
+
 (setq inhibit-x-resources t)
