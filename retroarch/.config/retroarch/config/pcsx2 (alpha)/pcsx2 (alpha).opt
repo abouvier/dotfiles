@@ -1,7 +1,7 @@
 pcsx2_accurate_date = "enabled"
 pcsx2_anisotropic_filter = "0"
 pcsx2_aspect_ratio = "1"
-pcsx2_bios = "~/Documents/RetroArch/bios/pcsx2/bios/ps2-0230e-20080220.bin"
+pcsx2_bios = "ps2-0230e-20080220.bin"
 pcsx2_boot_bios = "disabled"
 pcsx2_clamping_mode = "1"
 pcsx2_conservative_buffer = "enabled"
