@@ -1,2 +1,2 @@
 # shellcheck shell=bash
-alias y='youtube-dl'
+alias y='yt-dlp'
