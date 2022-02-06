@@ -1,4 +1,5 @@
 [Added Associations]
+application/json=org.kde.kwrite.desktop;
 application/octet-stream=org.kde.okteta.desktop;
 application/vnd.adobe.flash.movie=ruffle.desktop;
 application/x-bps-patch=org.kde.okteta.desktop;
@@ -26,6 +27,7 @@ video/x-ms-wmv=mpv.desktop;
 video/x-msvideo=mpv.desktop;
 
 [Default Applications]
+application/json=org.kde.kwrite.desktop;
 application/octet-stream=org.kde.okteta.desktop;
 application/pdf=okularApplication_pdf.desktop;
 application/vnd.adobe.flash.movie=ruffle.desktop;
