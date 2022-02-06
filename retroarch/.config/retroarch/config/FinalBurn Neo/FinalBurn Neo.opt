@@ -1,5 +1,5 @@
 fbneo-allow-depth-32 = "enabled"
-fbneo-allow-patched-romsets = "enabled"
+fbneo-allow-patched-romsets = "disabled"
 fbneo-analog-speed = "100%"
 fbneo-cpu-speed-adjust = "100%"
 fbneo-dipswitch-nibbler-Cabinet = "Upright"
