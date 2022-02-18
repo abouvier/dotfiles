@@ -1,8 +1,7 @@
 {
     "editor.fontFamily": "Hack",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
     "workbench.colorTheme": "Dracula",
     "update.mode": "none",
+    "telemetry.telemetryLevel": "off",
     "window.menuBarVisibility": "toggle"
 }

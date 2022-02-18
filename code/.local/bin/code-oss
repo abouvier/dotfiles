@@ -1,2 +1,5 @@
 #!/bin/sh
-exec /usr/bin/code-oss --extensions-dir="${XDG_CONFIG_HOME:-$HOME/.config}/Code - OSS/extensions" "$@"
+exec /usr/bin/code-oss \
+	--extensions-dir="${XDG_DATA_HOME:-$HOME/.local/share}/vscode" \
+	--user-data-dir="${XDG_CONFIG_HOME:-$HOME/.config}/vscode" \
+	"$@"
