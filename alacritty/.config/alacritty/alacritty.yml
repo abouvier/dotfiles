@@ -4,10 +4,11 @@ import:
 env:
   TERM: alacritty-direct
 
+window:
+  opacity: 0.95
+
 font:
   normal:
     family: Terminus
 
 draw_bold_text_with_bright_colors: true
-
-background_opacity: 0.95
