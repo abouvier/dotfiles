@@ -1,7 +1,6 @@
 [Context]
 filesystems=!xdg-pictures;!xdg-music;~/Jeux/Steam;
 features=!devel;
-devices=dri;!all;
 
 [Session Bus Policy]
 org.freedesktop.Notifications=talk
