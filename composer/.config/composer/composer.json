@@ -4,7 +4,6 @@
 		"vendor-dir": "~/.local/lib/composer"
 	},
 	"require": {
-		"doctormckay/steam-totp": "@stable",
 		"friendsofphp/php-cs-fixer": "@stable",
 		"nikic/php-parser": "@stable"
 	}
