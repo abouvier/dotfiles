@@ -5,6 +5,7 @@
 	},
 	"require": {
 		"friendsofphp/php-cs-fixer": "@stable",
-		"nikic/php-parser": "@stable"
+		"phpmd/phpmd": "@stable",
+		"squizlabs/php_codesniffer": "@stable"
 	}
 }
