@@ -3,5 +3,29 @@
     "workbench.colorTheme": "Dracula",
     "update.mode": "none",
     "telemetry.telemetryLevel": "off",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "shellcheck.executablePath": "/usr/bin/shellcheck",
+    "shellcheck.customArgs": [
+        "-x"
+    ],
+    "shellformat.flag": "-bn -ci -sr",
+    "shellformat.path": "/usr/bin/shfmt",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "phpSniffer.standard": "PSR12",
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+    },
+    "[diff]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "workbench.startupEditor": "none",
+    "editor.rulers": [
+        80
+    ],
+    "trailing-spaces.deleteModifiedLinesOnly": true,
+    "trailing-spaces.trimOnSave": true,
+    "trailing-spaces.syntaxIgnore": [
+        "diff"
+    ]
 }
