@@ -27,5 +27,11 @@
     "trailing-spaces.trimOnSave": true,
     "trailing-spaces.syntaxIgnore": [
         "diff"
-    ]
+    ],
+    "explorer.excludeGitIgnore": true,
+    "redhat.telemetry.enabled": false,
+    "c-cpp-flylint.clang.enable": false,
+    "c-cpp-flylint.flawfinder.enable": false,
+    "c-cpp-flylint.flexelint.enable": false,
+    "c-cpp-flylint.lizard.enable": false
 }
