@@ -3,6 +3,7 @@ user_pref("accessibility.typeaheadfind.enablesound", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.backspace_action", 0);
+user_pref("browser.cache.disk.parent_directory", "/run/user/1000/firefox");
 user_pref("browser.meta_refresh_when_inactive.disabled", true);
 user_pref("browser.onboarding.shieldstudy.enabled", false);
 user_pref("browser.tabs.insertAfterCurrent", true);
