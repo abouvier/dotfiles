@@ -1,4 +1,2 @@
 #!/bin/sh
-kquitapp5 plasmashell
-kstart5 plasmashell
-DISPLAY=:0 kwin_x11 --replace &
+exec systemctl --user restart plasma-plasmashell.service plasma-kwin_x11.service
