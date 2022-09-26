@@ -1,12 +1,5 @@
-# emacs
-.dir-locals.el
-
-# atom linter-gcc
-.gcc-flags.json
-*.h.gch
-
-# atom linter-clang
-.clang_complete
-
 # dolphin
 .directory
+
+# emacs
+.dir-locals.el
