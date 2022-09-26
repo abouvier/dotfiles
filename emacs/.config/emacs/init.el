@@ -1,6 +1,7 @@
 (require 'flycheck)
 (require 'generic-x)
 (require 'linum)
+(require 'pkg-info)
 (require 'xdg)
 
 (defun xdg-state-home ()
@@ -39,6 +40,8 @@
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
 (add-to-list 'interpreter-mode-alist '("php" . php-mode))
 
+(setq-default pkgbuild-source-directory-locations ".:~/.cache/pacman/src")
+(setq-default pkgbuild-update-sums-on-save nil)
 (autoload 'pkgbuild-mode "pkgbuild-mode" nil t)
 (add-to-list 'auto-mode-alist '("/PKGBUILD\\'" . pkgbuild-mode))
 
@@ -47,6 +50,7 @@
 
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 (setq-default flycheck-emacs-lisp-load-path 'inherit)
+(setq-default flycheck-phpcs-standard "PSR12")
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (flycheck-add-mode 'sh-shellcheck 'pkgbuild-mode)
 
