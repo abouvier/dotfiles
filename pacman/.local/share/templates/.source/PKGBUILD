@@ -1,0 +1,62 @@
+# Maintainer: Alexandre Bouvier <contact@amb.tf>
+_pkgname=NAME
+pkgname=$_pkgname-git
+pkgver=VERSION
+pkgrel=1
+pkgdesc=""
+arch=('aarch64' 'armv7h' 'i486' 'i686' 'pentium4' 'x86_64')
+url=""
+license=('unknown')
+groups=()
+depends=()
+makedepends=('cmake' 'git')
+checkdepends=()
+optdepends=()
+provides=("$_pkgname=$pkgver" 'LIBNAME.so')
+conflicts=("$_pkgname")
+replaces=()
+backup=()
+options=('!lto' 'staticlibs' '!strip')
+install=
+changelog=
+source=("$_pkgname::git+$url.git")
+noextract=()
+b2sums=('SKIP')
+validpgpkeys=()
+
+pkgver() {
+	cd $_pkgname
+	git describe --long --tags | sed 's/^prefix//;s/\([^-]*-g\)/r\1/;s/-/./g'
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+# prepare() {
+# 	cd $_pkgname
+# 	git config submodule.NAME.url ../PATH
+# 	git submodule update
+# 	patch -Np1 < ../FILE.patch
+# }
+
+build() {
+	cmake -S $_pkgname -B build \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_C_FLAGS_RELEASE="-DNDEBUG" \
+		-DCMAKE_CXX_FLAGS_RELEASE="-DNDEBUG" \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-Wno-dev
+	cmake --build build
+}
+
+check() {
+	make -C $_pkgname test
+	ctest --test-dir build
+}
+
+package() {
+	# depends+=('LIBNAME.so')
+	# shellcheck disable=SC2154
+	make -C $_pkgname DESTDIR="$pkgdir" install
+	DESTDIR="$pkgdir" cmake --install build
+	install -Dm644 -t "$pkgdir"/usr/share/licenses/$pkgname $_pkgname/LICENSE
+}
