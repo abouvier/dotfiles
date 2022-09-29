@@ -28,7 +28,7 @@ if [[ ! $AUR_REPO || $# -eq 0 ]]; then
 	usage
 fi
 
-if ! repo_path=$(aur repo --path); then
+if ! repo_path=$(realpath "/var/db/pacman/$AUR_REPO/$AUR_REPO.db"); then
 	exit 1
 fi
 

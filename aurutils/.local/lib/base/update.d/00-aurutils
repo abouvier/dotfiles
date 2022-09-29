@@ -1,2 +1,2 @@
 #!/bin/sh
-aur sync --chroot --sign --upgrades "$@"
+aur sandbox sync --sign --upgrades "$@"

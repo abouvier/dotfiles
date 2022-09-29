@@ -1,4 +1,24 @@
 # shellcheck shell=bash
-alias uninstalled_packages='aur repo --repo-list | xargs -r unbuffer pacman -Sl | grep -v \\[install'
-alias b='aur sync --chroot --rebuild --sign'
-alias bl='aur build --chroot --database "$USER"-local --force --sign'
+b() {
+	aur sandbox sync --rebuild --sign "$@"
+}
+
+bi() {
+	aur sandbox sync \
+		--database="$USER"-lan \
+		--makepkg-conf=/usr/share/devtools/makepkg-ivybridge.conf \
+		--rebuild \
+		--root=/var/db/pacman/"$USER"-lan \
+		--sign \
+		"$@"
+}
+
+bl() {
+	aur sandbox build --database="$USER"-local --force "$@"
+}
+
+uninstalled_packages() {
+	aur repo --list-repo \
+		| LANG=C xargs -r pacman -Sl --color=always \
+		| grep -v '\[installed\]'
+}

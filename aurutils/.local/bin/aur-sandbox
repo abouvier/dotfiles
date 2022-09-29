@@ -1,0 +1,15 @@
+#!/bin/bash
+if [[ $# -eq 0 ]]; then
+	echo 'usage: sandbox command [...]' >&2
+	exit 1
+fi
+
+readonly command=$1
+shift
+
+aur "$command" \
+	--bind-rw=/var/tmp/ccache-$UID:/build/.cache/ccache \
+	--chroot \
+	--ignore-arch \
+	--makepkg-conf=/usr/share/devtools/makepkg-zen2.conf \
+	"$@"
