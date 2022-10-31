@@ -1,1 +1,2 @@
-#reference "/usr/share/libretro/shaders/shaders_slang/handheld/console-border/dmg-5x.slangp"
+#reference "/usr/share/libretro/shaders/shaders_slang/handheld/console-border/dmg.slangp"
+video_scale = "5.000000"
