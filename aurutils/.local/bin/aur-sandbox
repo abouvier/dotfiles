@@ -8,7 +8,8 @@ readonly command=$1
 shift
 
 aur "$command" \
-	--bind-rw=/var/tmp/ccache-$UID:/build/.cache/ccache \
+	--bind-rw="${XDG_CACHE_HOME:-$HOME/.cache}"/ccache:/build/.cache/ccache \
+	--bind-rw="${XDG_CACHE_HOME:-$HOME/.cache}"/go-build:/build/.cache/go-build \
 	--chroot \
 	--ignore-arch \
 	--makepkg-conf=/usr/share/devtools/makepkg-zen2.conf \
