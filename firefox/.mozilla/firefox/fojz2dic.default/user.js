@@ -22,7 +22,7 @@ user_pref("layout.frame_rate", 144);
 user_pref("layout.word_select.stop_at_punctuation", true);
 user_pref("media.autoplay.enabled", true);
 user_pref("media.block-autoplay-until-in-foreground", true);
-user_pref("media.ffmpeg.vaapi.enabled", false);
+user_pref("media.ffmpeg.vaapi.enabled", true);
 user_pref("middlemouse.contentLoadURL", false);
 user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.trackingprotection.enabled", true);
