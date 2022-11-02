@@ -15,6 +15,7 @@ StartInCurrentSessionDir=true
 [Interaction Options]
 AutoCopySelectedText=true
 MouseWheelZoomEnabled=false
+UnderlineFilesEnabled=true
 
 [Keyboard]
 KeyBindings=default
