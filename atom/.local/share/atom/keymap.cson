@@ -1,2 +1,0 @@
-'atom-workspace atom-text-editor':
-	'ctrl-alt-P': 'editor:log-cursor-scope'

@@ -90,7 +90,6 @@ video/x-flv=mpv.desktop;
 video/x-matroska=mpv.desktop;
 video/x-ms-wmv=mpv.desktop;
 video/x-msvideo=mpv.desktop;
-x-scheme-handler/atom=atom.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/irc=hexchat.desktop;
