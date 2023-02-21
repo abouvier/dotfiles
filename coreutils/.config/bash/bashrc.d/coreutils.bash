@@ -1,6 +1,4 @@
 # shellcheck shell=bash
-eval "$(dircolors <(dircolors --print-database | sed '1i TERM *direct*'))"
-
 alias ls='ls -hF --color=auto --hide=lost+found'
 alias ll='ls -l'
 alias la='ll -a'
