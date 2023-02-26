@@ -2,7 +2,7 @@
 AntiAliasFonts=false
 BoldIntense=true
 ColorScheme=Dracula
-Font=Terminus,12,-1,5,57,0,0,0,0,0,Medium
+Font=Terminus,12,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=true
 
 [General]
