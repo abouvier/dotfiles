@@ -1,4 +1,4 @@
-bsnes_aspect_ratio = "Auto"
+bsnes_aspect_ratio = "8:7"
 bsnes_blur_emulation = "OFF"
 bsnes_coprocessor_delayed_sync = "ON"
 bsnes_coprocessor_prefer_hle = "OFF"

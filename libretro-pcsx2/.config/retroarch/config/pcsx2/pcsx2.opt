@@ -1,0 +1,4 @@
+pcsx2_bios = "Europe  v02.30(20/02/2008)  Console 20080220-175343"
+pcsx2_fastboot = "enabled"
+pcsx2_renderer = "Auto"
+pcsx2_upscale_multiplier = "4x Native ~1440p 2K"

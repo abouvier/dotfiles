@@ -1,4 +1,4 @@
-mesen_aspect_ratio = "Auto"
+mesen_aspect_ratio = "No Stretching"
 mesen_audio_sample_rate = "48000"
 mesen_controllerturbospeed = "Fast"
 mesen_disable_noise_mode_flag = "disabled"
