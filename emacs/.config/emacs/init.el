@@ -1,3 +1,5 @@
+(require 'cmake-mode)
+(require 'desktop-entry-mode)
 (require 'flycheck)
 (require 'generic-x)
 (require 'linum)
