@@ -6,7 +6,6 @@ b() {
 bi() {
 	aur sandbox sync \
 		--database="$USER"-lan \
-		--makepkg-conf=/usr/share/devtools/makepkg-ivybridge.conf \
 		--rebuild \
 		--root=/var/db/pacman/"$USER"-lan \
 		--sign \
