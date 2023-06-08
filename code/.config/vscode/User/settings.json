@@ -5,9 +5,6 @@
     "telemetry.telemetryLevel": "off",
     "window.menuBarVisibility": "toggle",
     "shellcheck.executablePath": "/usr/bin/shellcheck",
-    "shellcheck.customArgs": [
-        "-x"
-    ],
     "shellformat.flag": "-bn -ci -sr",
     "shellformat.path": "/usr/bin/shfmt",
     "files.insertFinalNewline": true,
