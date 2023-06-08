@@ -28,5 +28,6 @@
     "c-cpp-flylint.clang.enable": false,
     "c-cpp-flylint.flawfinder.enable": false,
     "c-cpp-flylint.flexelint.enable": false,
-    "c-cpp-flylint.lizard.enable": false
+    "c-cpp-flylint.lizard.enable": false,
+    "workbench.iconTheme": "material-icon-theme"
 }
