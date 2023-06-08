@@ -1,4 +1,4 @@
-mesen-s_aspect_ratio = "Auto"
+mesen-s_aspect_ratio = "No Stretching"
 mesen-s_blend_high_res = "disabled"
 mesen-s_cubic_interpolation = "disabled"
 mesen-s_gbmodel = "Auto"
