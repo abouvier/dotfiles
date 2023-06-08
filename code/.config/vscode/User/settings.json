@@ -5,8 +5,6 @@
     "telemetry.telemetryLevel": "off",
     "window.menuBarVisibility": "toggle",
     "shellcheck.executablePath": "/usr/bin/shellcheck",
-    "shellformat.flag": "-bn -ci -sr",
-    "shellformat.path": "/usr/bin/shfmt",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "phpSniffer.standard": "PSR12",

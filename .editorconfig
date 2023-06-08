@@ -1,0 +1,16 @@
+root = true
+
+[*]
+binary_next_line = true
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+insert_final_newline = true
+space_redirects = true
+switch_case_indent = true
+
+[*.bash]
+shell_variant = bash
+
+[*.sh]
+shell_variant = posix
