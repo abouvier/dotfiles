@@ -8,6 +8,7 @@ readonly command=$1
 shift
 
 aur "$command" \
+	--bind-rw="${XDG_CACHE_HOME:-$HOME/.cache}"/cargo:/build/.cargo \
 	--bind-rw="${XDG_CACHE_HOME:-$HOME/.cache}"/ccache:/build/.cache/ccache \
 	--bind-rw="${XDG_CACHE_HOME:-$HOME/.cache}"/go-build:/build/.cache/go-build \
 	--chroot \
