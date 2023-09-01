@@ -2,7 +2,6 @@
 (require 'desktop-entry-mode)
 (require 'flycheck)
 (require 'generic-x)
-(require 'linum)
 (require 'pkg-info)
 (require 'xdg)
 
@@ -21,8 +20,8 @@
 (setq-default c-default-style "linux")
 (setq vc-follow-symlinks nil)
 (setq column-number-mode t)
-(global-linum-mode t)
-(global-hl-line-mode t)
+(global-display-line-numbers-mode)
+(global-hl-line-mode)
 (setq visible-bell t)
 (setq read-file-name-completion-ignore-case t)
 (setq scroll-step 1)
@@ -57,7 +56,3 @@
 (flycheck-add-mode 'sh-shellcheck 'pkgbuild-mode)
 
 (load-theme 'dracula t)
-
-(setq linum-format (lambda (line)
-	(let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
-		(propertize (format (format "%%%dd \u2502 " w) line) 'face 'linum))))

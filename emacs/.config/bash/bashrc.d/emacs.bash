@@ -1,2 +1,2 @@
 # shellcheck shell=bash
-alias e='emacsclient --tty'
+alias e='emacsclient'
