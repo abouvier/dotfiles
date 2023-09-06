@@ -1,6 +1,0 @@
-#!/bin/sh
-export DESKTOP_SESSION=i3
-export QT_QPA_PLATFORMTHEME=qt5ct
-export XDG_SESSION_DESKTOP=i3
-
-exec /usr/bin/i3 "$@"
