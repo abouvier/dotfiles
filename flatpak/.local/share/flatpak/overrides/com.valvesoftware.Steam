@@ -1,5 +1,5 @@
 [Context]
-filesystems=!xdg-pictures;!xdg-music;~/Jeux/Steam;
+filesystems=xdg-run/pipewire-0;!xdg-pictures;!xdg-music;~/Jeux/Steam;
 features=!devel;
 
 [Session Bus Policy]
