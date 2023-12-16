@@ -2,8 +2,20 @@
 	"[diff]": {
 		"files.trimTrailingWhitespace": false
 	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"[php]": {
 		"editor.defaultFormatter": "junstyle.php-cs-fixer"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"c-cpp-flylint.clang.enable": false,
 	"c-cpp-flylint.flawfinder.enable": false,
@@ -16,7 +28,8 @@
 	"explorer.excludeGitIgnore": true,
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
-	"phpSniffer.standard": "PSR12",
+	"mesonbuild.downloadLanguageServer": false,
+	"phpSniffer.standard": "Symfony",
 	"redhat.telemetry.enabled": false,
 	"shellcheck.executablePath": "/usr/bin/shellcheck",
 	"telemetry.telemetryLevel": "off",
@@ -25,6 +38,7 @@
 		"diff"
 	],
 	"trailing-spaces.trimOnSave": true,
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
 	"update.mode": "none",
 	"window.menuBarVisibility": "toggle",
 	"workbench.colorTheme": "Dracula",
