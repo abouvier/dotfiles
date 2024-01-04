@@ -3,3 +3,6 @@
 
 # emacs
 .dir-locals.el
+
+# code
+.vscode/
