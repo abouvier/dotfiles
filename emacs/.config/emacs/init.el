@@ -36,7 +36,7 @@
 
 (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 (setq-default flycheck-emacs-lisp-load-path 'inherit)
-(setq-default flycheck-phpcs-standard "PSR12")
+(setq-default flycheck-phpcs-standard "Symfony")
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (flycheck-add-mode 'sh-shellcheck 'pkgbuild-mode)
 
