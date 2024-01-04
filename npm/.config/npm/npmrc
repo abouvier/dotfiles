@@ -1,3 +1,2 @@
-prefix = ~/.local/share/npm
 cache = ~/.cache/npm
-tmp = ${XDG_RUNTIME_DIR}/npm
+prefix = ~/.local
