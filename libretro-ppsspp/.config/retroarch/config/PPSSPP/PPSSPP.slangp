@@ -1,1 +1,2 @@
 #reference "/usr/share/libretro/shaders/shaders_slang/handheld/console-border/psp.slangp"
+video_scale = "3.000000"
